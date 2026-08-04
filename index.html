@@ -1,25 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CallHarbour — Never Lose Another Customer to Voicemail</title>
-<meta name="description" content="CallHarbour answers your business calls, books appointments and notifies you instantly — so you never miss another customer.">
+<title>Call Station | UK Call Answering & Virtual Receptionist for Trades</title>
+<meta name="description" content="Call Station answers your business calls in your name, books the appointment straight into your diary, and notifies you instantly. UK call answering built for builders, electricians, plumbers, dentists and accountants.">
+<meta name="keywords" content="call answering service UK, virtual receptionist, missed call, appointment booking service, telephone answering for tradesmen">
+<link rel="canonical" href="https://www.callstation.co.uk/">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Call Station">
+<meta property="og:title" content="Call Station | Never Lose Another Customer to Voicemail">
+<meta property="og:description" content="UK call answering that picks up in your business name, books the appointment, and tells you the moment it's done.">
+<meta property="og:url" content="https://www.callstation.co.uk/">
+<meta property="og:locale" content="en_GB">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Call Station | UK Call Answering for Trades">
+<meta name="twitter:description" content="Never lose another customer to voicemail. Calls answered, appointments booked, you notified instantly.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Call Station",
+  "url": "https://www.callstation.co.uk/",
+  "description": "UK-based call answering and virtual receptionist service for tradespeople and professional practices.",
+  "areaServed": "GB",
+  "priceRange": "££",
+  "makesOffer": [
+    {"@type":"Offer","name":"Starter plan","price":"79","priceCurrency":"GBP"},
+    {"@type":"Offer","name":"Growth plan","price":"149","priceCurrency":"GBP"},
+    {"@type":"Offer","name":"Professional plan","price":"249","priceCurrency":"GBP"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Will callers know I'm not answering myself?","acceptedAnswer":{"@type":"Answer","text":"No. Every call is answered in your business name, so it sounds exactly like your own team picking up the phone."}},
+    {"@type":"Question","name":"Do I need to install anything?","acceptedAnswer":{"@type":"Answer","text":"No apps, no new hardware. We divert your existing number, and you get notified by SMS and email as normal."}},
+    {"@type":"Question","name":"Can I keep my existing phone number?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your current number stays exactly the same, customers won't notice any difference on their end."}},
+    {"@type":"Question","name":"What happens if I go over my call limit?","acceptedAnswer":{"@type":"Answer","text":"We'll let you know in advance. You can move up a plan at any time, with no long-term contract."}},
+    {"@type":"Question","name":"Can I cancel at any time?","acceptedAnswer":{"@type":"Answer","text":"Yes. There's no lock-in contract, you can cancel or change plans whenever you need to."}}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#17324D;
-    --navy-deep:#101f30;
-    --slate:#4A6583;
-    --gold:#D8A548;
-    --gold-soft:#e9c47f;
+    --orange:#E85D2C;
+    --orange-deep:#B7431B;
+    --orange-soft:#FFE7DB;
+    --orange-pale:#FFF5F0;
     --white:#FFFFFF;
-    --grey:#F7F8FA;
-    --charcoal:#222222;
-    --line:rgba(23,50,77,0.12);
-    --shadow: 0 20px 60px -20px rgba(16,31,48,0.25);
-    --radius:14px;
+    --ink:#1D1B1A;
+    --ink-soft:#6B6663;
+    --line:rgba(29,27,26,0.10);
+    --shadow: 0 24px 60px -24px rgba(184,67,20,0.35);
+    --radius:16px;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -28,360 +72,175 @@
     *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
   }
   body{
-    margin:0;
-    font-family:'Inter',system-ui,sans-serif;
-    color:var(--charcoal);
-    background:var(--white);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
+    margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink);
+    background:var(--white); line-height:1.6; -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3,h4{
-    font-family:'Fraunces',serif;
-    color:var(--navy);
-    margin:0;
-    font-weight:600;
-    letter-spacing:-0.01em;
-  }
+  h1,h2,h3,h4{font-family:'Fraunces',serif; color:var(--ink); margin:0; font-weight:600; letter-spacing:-0.01em;}
   a{color:inherit;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
-  .eyebrow{
-    font-size:0.78rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--gold);
-    font-weight:700;
-    margin-bottom:14px;
-    display:inline-block;
-  }
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-    padding:15px 30px;
-    border-radius:8px;
-    font-weight:600;
-    font-size:0.98rem;
-    text-decoration:none;
-    cursor:pointer;
-    border:1px solid transparent;
-    transition:transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    font-family:'Inter',sans-serif;
-  }
-  .btn:focus-visible{outline:3px solid var(--gold-soft); outline-offset:2px;}
-  .btn-primary{background:var(--gold); color:var(--navy-deep);}
-  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 12px 24px -8px rgba(216,165,72,0.55);}
-  .btn-ghost{background:transparent; color:var(--white); border-color:rgba(255,255,255,0.4);}
-  .btn-ghost:hover{background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.7);}
-  .btn-dark{background:var(--navy); color:var(--white);}
-  .btn-dark:hover{transform:translateY(-2px); box-shadow:0 12px 24px -10px rgba(23,50,77,0.5);}
+  img,svg{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+  .eyebrow{font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--orange-deep); font-weight:700; margin-bottom:14px; display:inline-block;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:15px 30px; border-radius:10px; font-weight:700; font-size:0.98rem; text-decoration:none; cursor:pointer; border:2px solid transparent; transition:transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; font-family:'Inter',sans-serif;}
+  .btn:focus-visible{outline:3px solid var(--orange-soft); outline-offset:2px;}
+  .btn-primary{background:var(--orange); color:var(--white);}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 14px 26px -10px rgba(232,93,44,0.55); background:var(--orange-deep);}
+  .btn-outline{background:transparent; color:var(--ink); border-color:var(--ink);}
+  .btn-outline:hover{background:var(--ink); color:var(--white);}
+  .btn-white{background:var(--white); color:var(--orange-deep);}
+  .btn-white:hover{transform:translateY(-2px); box-shadow:0 14px 26px -10px rgba(0,0,0,0.25);}
 
-  /* ---------- Nav ---------- */
-  header{
-    position:sticky; top:0; z-index:50;
-    background:rgba(23,50,77,0.96);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid rgba(255,255,255,0.08);
-  }
-  nav{
-    display:flex; align-items:center; justify-content:space-between;
-    padding:18px 0;
-  }
-  .logo{
-    font-family:'Fraunces',serif; font-weight:700; font-size:1.35rem; color:var(--white);
-    letter-spacing:-0.01em;
-  }
-  .logo span{color:var(--gold);}
+  header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+  nav{display:flex; align-items:center; justify-content:space-between; padding:18px 0;}
+  .logo{font-family:'Fraunces',serif; font-weight:700; font-size:1.4rem; color:var(--ink); letter-spacing:-0.01em; display:flex; align-items:center; gap:8px;}
+  .logo .dot{width:9px; height:9px; border-radius:50%; background:var(--orange); display:inline-block;}
+  .logo-tagline{font-size:0.7rem; color:var(--ink-soft); letter-spacing:0.04em; margin-top:1px;}
+  @media (max-width:640px){.logo-tagline{display:none;}}
   .nav-links{display:flex; gap:34px; list-style:none; margin:0; padding:0;}
-  .nav-links a{color:rgba(255,255,255,0.82); text-decoration:none; font-size:0.94rem; font-weight:500;}
-  .nav-links a:hover{color:var(--white);}
+  .nav-links a{color:var(--ink-soft); text-decoration:none; font-size:0.94rem; font-weight:600;}
+  .nav-links a:hover{color:var(--orange-deep);}
   .nav-cta{display:flex; gap:14px; align-items:center;}
-  .nav-toggle{display:none; background:none; border:none; color:var(--white); font-size:1.6rem; cursor:pointer;}
-  @media (max-width:880px){
-    .nav-links{display:none;}
-    .nav-toggle{display:block;}
-  }
+  .nav-toggle{display:none; background:none; border:none; color:var(--ink); font-size:1.6rem; cursor:pointer;}
+  @media (max-width:880px){.nav-links{display:none;} .nav-toggle{display:block;}}
 
-  /* ---------- Hero ---------- */
-  .hero{
-    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
-    color:var(--white);
-    padding:88px 0 110px;
-    position:relative;
-    overflow:hidden;
-  }
-  .hero::after{
-    content:"";
-    position:absolute; inset:0;
-    background: radial-gradient(circle at 82% 20%, rgba(216,165,72,0.14), transparent 45%);
-    pointer-events:none;
-  }
-  .hero-grid{
-    display:grid;
-    grid-template-columns:1.15fr 0.85fr;
-    gap:60px;
-    align-items:center;
-    position:relative;
-  }
-  .hero h1{
-    color:var(--white);
-    font-size:clamp(2.4rem, 4.4vw, 3.6rem);
-    line-height:1.08;
-  }
-  .hero h1 em{font-style:italic; color:var(--gold);}
-  .hero p.lead{
-    font-size:1.16rem;
-    color:rgba(255,255,255,0.78);
-    max-width:520px;
-    margin:22px 0 34px;
-  }
+  .hero{background:var(--white); padding:80px 0 60px; position:relative; overflow:hidden;}
+  .hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:60px; align-items:center; position:relative;}
+  .hero h1{font-size:clamp(2.5rem,4.6vw,3.8rem); line-height:1.06;}
+  .hero h1 em{font-style:italic; color:var(--orange);}
+  .hero p.lead{font-size:1.16rem; color:var(--ink-soft); max-width:520px; margin:22px 0 34px;}
   .hero-ctas{display:flex; gap:16px; flex-wrap:wrap;}
-  .hero-trust{
-    margin-top:44px; display:flex; gap:28px; flex-wrap:wrap;
-    color:rgba(255,255,255,0.55); font-size:0.85rem;
-  }
-  .hero-trust strong{color:var(--white); display:block; font-family:'Fraunces',serif; font-size:1.5rem; font-weight:600;}
+  .hero-trust{margin-top:44px; display:flex; gap:32px; flex-wrap:wrap;}
+  .hero-trust strong{color:var(--ink); display:block; font-family:'Fraunces',serif; font-size:1.6rem; font-weight:600;}
+  .hero-trust span{color:var(--ink-soft); font-size:0.85rem;}
 
-  /* Phone signature element */
-  .phone{
-    width:290px; max-width:100%; margin-left:auto;
-    background:var(--charcoal);
-    border-radius:36px;
-    padding:14px;
-    box-shadow: var(--shadow), 0 0 0 8px rgba(255,255,255,0.03);
-    position:relative;
+  .ripple-art{position:relative; width:100%; aspect-ratio:1/1; max-width:440px; margin:0 auto;}
+  .ripple-art svg{width:100%; height:100%;}
+  .ripple-ring{fill:none; stroke:var(--orange); opacity:0; transform-origin:center; animation:rippleOut 3.2s ease-out infinite;}
+  .ripple-ring.r2{animation-delay:1.05s;}
+  .ripple-ring.r3{animation-delay:2.1s;}
+  @keyframes rippleOut{
+    0%{opacity:0.55; stroke-width:2;}
+    70%{opacity:0;}
+    100%{opacity:0;}
   }
-  .phone-screen{
-    background:linear-gradient(180deg,#0f2135,#132a44);
-    border-radius:24px;
-    min-height:430px;
-    padding:26px 20px;
-    position:relative;
-    overflow:hidden;
+  .ripple-card{
+    position:absolute; background:var(--white); border:1px solid var(--line); border-radius:14px;
+    padding:12px 16px; box-shadow:var(--shadow); font-size:0.82rem; font-weight:600; color:var(--ink);
+    display:flex; align-items:center; gap:10px; opacity:0; animation:cardPop 0.5s ease forwards;
   }
-  .phone-time{color:rgba(255,255,255,0.5); font-size:0.75rem; text-align:center; margin-bottom:18px; letter-spacing:0.05em;}
-  .call-steps{display:flex; flex-direction:column; gap:12px;}
-  .call-step{
-    background:rgba(255,255,255,0.04);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:12px;
-    padding:13px 14px;
-    display:flex; align-items:center; gap:12px;
-    opacity:0;
-    transform:translateY(10px);
-    animation: stepIn 0.6s ease forwards;
-  }
-  .call-step .dot{
-    width:9px; height:9px; border-radius:50%; background:var(--gold); flex:none;
-    box-shadow:0 0 0 4px rgba(216,165,72,0.18);
-  }
-  .call-step .txt strong{display:block; color:var(--white); font-size:0.86rem; font-weight:600;}
-  .call-step .txt span{display:block; color:rgba(255,255,255,0.5); font-size:0.74rem; margin-top:2px;}
-  .call-step:nth-child(1){animation-delay:0.2s;}
-  .call-step:nth-child(2){animation-delay:1.4s;}
-  .call-step:nth-child(3){animation-delay:2.6s;}
-  .call-step:nth-child(4){animation-delay:3.8s;}
-  .call-step:nth-child(5){animation-delay:5.0s;}
-  @keyframes stepIn{ to{opacity:1; transform:translateY(0);} }
-  .phone-notch{
-    position:absolute; top:6px; left:50%; transform:translateX(-50%);
-    width:70px; height:6px; background:rgba(0,0,0,0.5); border-radius:6px;
-  }
+  .ripple-card .badge{width:8px; height:8px; border-radius:50%; background:var(--orange); flex:none;}
+  .rc1{top:6%; left:0%; animation-delay:0.4s;}
+  .rc2{top:38%; right:-4%; animation-delay:1.3s;}
+  .rc3{bottom:10%; left:6%; animation-delay:2.2s;}
+  @keyframes cardPop{ from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);} }
 
-  /* ---------- Trusted strip ---------- */
-  .trusted{
-    background:var(--grey);
-    padding:34px 0;
-    border-bottom:1px solid var(--line);
-  }
-  .trusted .wrap{
-    display:flex; align-items:center; gap:40px; flex-wrap:wrap; justify-content:space-between;
-  }
-  .trusted p{margin:0; color:var(--slate); font-size:0.86rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase;}
-  .trade-list{display:flex; gap:30px; flex-wrap:wrap; color:var(--navy); font-family:'Fraunces',serif; font-size:1.05rem;}
+  .trusted{background:var(--orange-pale); padding:34px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .trusted .wrap{display:flex; align-items:center; gap:40px; flex-wrap:wrap; justify-content:space-between;}
+  .trusted p{margin:0; color:var(--orange-deep); font-size:0.86rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;}
+  .trade-list{display:flex; gap:30px; flex-wrap:wrap; color:var(--ink); font-family:'Fraunces',serif; font-size:1.05rem;}
 
-  /* ---------- Section base ---------- */
   section{padding:100px 0;}
   .section-head{max-width:640px; margin-bottom:56px;}
   .section-head h2{font-size:clamp(1.9rem,3vw,2.5rem); line-height:1.16;}
-  .section-head p{color:var(--slate); font-size:1.08rem; margin-top:16px;}
-  .section-alt{background:var(--grey);}
+  .section-head p{color:var(--ink-soft); font-size:1.08rem; margin-top:16px;}
+  .section-alt{background:var(--orange-pale);}
 
-  /* ---------- Cost of missed calls (band layout) ---------- */
-  .cost-band{
-    display:grid; grid-template-columns:0.9fr 1.1fr; gap:70px; align-items:center;
-  }
-  .cost-visual{
-    background:var(--navy); border-radius:20px; padding:40px;
-    color:var(--white); position:relative; overflow:hidden;
-  }
-  .cost-visual .big-stat{font-family:'Fraunces',serif; font-size:3.6rem; font-weight:700; color:var(--gold); line-height:1;}
+  .cost-band{display:grid; grid-template-columns:0.9fr 1.1fr; gap:70px; align-items:center;}
+  .cost-visual{background:var(--ink); border-radius:20px; padding:40px; color:var(--white); position:relative; overflow:hidden;}
+  .cost-visual .big-stat{font-family:'Fraunces',serif; font-size:3.8rem; font-weight:700; color:var(--orange); line-height:1;}
   .cost-visual p{color:rgba(255,255,255,0.75); margin-top:14px; font-size:0.98rem;}
   .cost-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:22px;}
-  .cost-list li{
-    display:flex; gap:18px; align-items:flex-start;
-    padding-bottom:22px; border-bottom:1px solid var(--line);
-  }
+  .cost-list li{display:flex; gap:18px; align-items:flex-start; padding-bottom:22px; border-bottom:1px solid var(--line);}
   .cost-list li:last-child{border-bottom:none; padding-bottom:0;}
-  .cost-list .num{
-    font-family:'Fraunces',serif; color:var(--gold); font-weight:700; font-size:1.3rem; flex:none; width:34px;
-  }
+  .cost-list .ic{flex:none; width:38px; height:38px; color:var(--orange);}
   .cost-list h4{font-size:1.08rem; margin-bottom:4px;}
-  .cost-list p{margin:0; color:var(--slate); font-size:0.96rem;}
+  .cost-list p{margin:0; color:var(--ink-soft); font-size:0.96rem;}
 
-  /* ---------- How it works ---------- */
-  .flow{
-    display:grid; grid-template-columns:repeat(5,1fr); gap:0; position:relative; margin-top:20px;
-  }
-  .flow::before{
-    content:""; position:absolute; top:26px; left:8%; right:8%; height:2px;
-    background:repeating-linear-gradient(90deg, var(--line) 0 10px, transparent 10px 18px);
-  }
+  .flow{display:grid; grid-template-columns:repeat(5,1fr); gap:0; position:relative; margin-top:20px;}
+  .flow::before{content:""; position:absolute; top:30px; left:8%; right:8%; height:2px; background:repeating-linear-gradient(90deg, var(--line) 0 10px, transparent 10px 18px);}
   .flow-step{text-align:center; padding:0 12px; position:relative;}
-  .flow-step .circle{
-    width:52px; height:52px; border-radius:50%; background:var(--white);
-    border:2px solid var(--gold); color:var(--navy); font-family:'Fraunces',serif; font-weight:700;
-    display:flex; align-items:center; justify-content:center; margin:0 auto 18px; font-size:1.1rem;
-    position:relative; z-index:2;
-  }
+  .flow-step .circle{width:60px; height:60px; border-radius:50%; background:var(--white); border:2px solid var(--orange); color:var(--orange-deep); display:flex; align-items:center; justify-content:center; margin:0 auto 18px; position:relative; z-index:2;}
   .flow-step h4{font-size:1rem; margin-bottom:6px;}
-  .flow-step p{font-size:0.88rem; color:var(--slate); margin:0;}
-  @media (max-width:880px){
-    .flow{grid-template-columns:1fr; gap:34px;}
-    .flow::before{display:none;}
-  }
+  .flow-step p{font-size:0.88rem; color:var(--ink-soft); margin:0;}
+  @media (max-width:880px){.flow{grid-template-columns:1fr; gap:34px;} .flow::before{display:none;}}
 
-  /* ---------- Industries ---------- */
-  .industry-strip{
-    display:flex; gap:18px; overflow-x:auto; padding-bottom:10px; scroll-snap-type:x mandatory;
-  }
+  .industry-strip{display:flex; gap:18px; overflow-x:auto; padding-bottom:10px; scroll-snap-type:x mandatory;}
   .industry-strip::-webkit-scrollbar{height:6px;}
   .industry-strip::-webkit-scrollbar-thumb{background:var(--line); border-radius:6px;}
-  .industry-card{
-    flex:0 0 240px; scroll-snap-align:start;
-    background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
-    padding:26px 22px;
-  }
-  .industry-card .tag{
-    display:inline-block; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;
-    color:var(--gold); font-weight:700; margin-bottom:12px;
-  }
+  .industry-card{flex:0 0 240px; scroll-snap-align:start; background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:26px 22px;}
+  .industry-card .ic{width:34px; height:34px; color:var(--orange); margin-bottom:14px;}
   .industry-card h4{font-size:1.1rem; margin-bottom:8px;}
-  .industry-card p{font-size:0.9rem; color:var(--slate); margin:0;}
+  .industry-card p{font-size:0.9rem; color:var(--ink-soft); margin:0;}
 
-  /* ---------- Benefits ---------- */
   .benefits{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;}
   .benefit{background:var(--white); padding:38px 30px;}
-  .benefit .icon{
-    width:44px; height:44px; border-radius:10px; background:var(--grey); color:var(--gold);
-    display:flex; align-items:center; justify-content:center; margin-bottom:18px; font-size:1.3rem;
-  }
+  .benefit .ic{width:40px; height:40px; color:var(--orange); margin-bottom:18px;}
   .benefit h4{font-size:1.08rem; margin-bottom:8px;}
-  .benefit p{font-size:0.93rem; color:var(--slate); margin:0;}
+  .benefit p{font-size:0.93rem; color:var(--ink-soft); margin:0;}
   @media (max-width:820px){.benefits{grid-template-columns:1fr;}}
 
-  /* ---------- Testimonials ---------- */
   .testi-wrap{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
-  .testi{
-    background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
-    padding:30px; position:relative;
-  }
-  .testi::before{
-    content:"\201C"; font-family:'Fraunces',serif; font-size:3.2rem; color:var(--gold-soft);
-    position:absolute; top:8px; left:20px; line-height:1;
-  }
-  .testi p{margin:22px 0 20px; color:var(--charcoal); font-size:0.98rem; position:relative; z-index:1;}
+  .testi{background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:30px; position:relative;}
+  .testi .quote-mark{color:var(--orange-soft); position:absolute; top:14px; left:22px;}
+  .testi p{margin:26px 0 20px; color:var(--ink); font-size:0.98rem; position:relative; z-index:1;}
   .testi-person{display:flex; align-items:center; gap:12px;}
-  .avatar{
-    width:42px; height:42px; border-radius:50%; background:var(--navy); color:var(--gold);
-    display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:700;
-  }
-  .testi-person strong{display:block; font-size:0.92rem; color:var(--navy);}
-  .testi-person span{font-size:0.82rem; color:var(--slate);}
+  .avatar{width:42px; height:42px; border-radius:50%; background:var(--orange-soft); color:var(--orange-deep); display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:700;}
+  .testi-person strong{display:block; font-size:0.92rem; color:var(--ink);}
+  .testi-person span{font-size:0.82rem; color:var(--ink-soft);}
   @media (max-width:900px){.testi-wrap{grid-template-columns:1fr;}}
 
-  /* ---------- Pricing ---------- */
   .pricing-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:stretch;}
-  .plan{
-    background:var(--white); border:1px solid var(--line); border-radius:18px;
-    padding:36px 30px; display:flex; flex-direction:column;
-  }
-  .plan.highlight{
-    background:var(--navy); color:var(--white); border-color:var(--navy);
-    transform:translateY(-14px);
-    box-shadow:var(--shadow);
-  }
+  .plan{background:var(--white); border:1px solid var(--line); border-radius:18px; padding:36px 30px; display:flex; flex-direction:column;}
+  .plan.highlight{background:var(--ink); color:var(--white); border-color:var(--ink); transform:translateY(-14px); box-shadow:var(--shadow);}
   .plan.highlight h3, .plan.highlight .price{color:var(--white);}
-  .plan.highlight .plan-tag{background:var(--gold); color:var(--navy-deep);}
-  .plan-tag{
-    display:inline-block; font-size:0.72rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase;
-    background:var(--grey); color:var(--slate); padding:5px 12px; border-radius:20px; margin-bottom:16px; align-self:flex-start;
-  }
+  .plan.highlight .plan-tag{background:var(--orange); color:var(--white);}
+  .plan-tag{display:inline-block; font-size:0.72rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; background:var(--orange-soft); color:var(--orange-deep); padding:5px 12px; border-radius:20px; margin-bottom:16px; align-self:flex-start;}
   .plan h3{font-size:1.25rem; margin-bottom:6px;}
-  .price{font-family:'Fraunces',serif; font-size:2.4rem; font-weight:700; color:var(--navy); margin:6px 0 4px;}
-  .price span{font-size:1rem; font-weight:400; color:var(--slate);}
+  .price{font-family:'Fraunces',serif; font-size:2.5rem; font-weight:700; color:var(--ink); margin:6px 0 4px;}
+  .price span{font-size:1rem; font-weight:400; color:var(--ink-soft);}
   .plan.highlight .price span{color:rgba(255,255,255,0.6);}
-  .plan-desc{font-size:0.9rem; color:var(--slate); margin-bottom:22px;}
+  .plan-desc{font-size:0.9rem; color:var(--ink-soft); margin-bottom:22px;}
   .plan.highlight .plan-desc{color:rgba(255,255,255,0.7);}
   .plan ul{list-style:none; margin:0 0 28px; padding:0; flex:1; display:flex; flex-direction:column; gap:12px;}
   .plan li{display:flex; gap:10px; font-size:0.92rem; align-items:flex-start;}
-  .plan li::before{content:"✓"; color:var(--gold); font-weight:700; flex:none;}
+  .plan li::before{content:"✓"; color:var(--orange); font-weight:700; flex:none;}
+  .plan.highlight li::before{color:var(--orange);}
   .plan .btn{width:100%;}
 
-  /* ---------- FAQ ---------- */
   .faq{max-width:800px; margin:0 auto;}
   .faq-item{border-bottom:1px solid var(--line);}
-  .faq-q{
-    width:100%; text-align:left; background:none; border:none; padding:22px 0;
-    display:flex; justify-content:space-between; align-items:center; cursor:pointer;
-    font-family:'Fraunces',serif; font-size:1.05rem; color:var(--navy); font-weight:600;
-  }
-  .faq-q .plus{color:var(--gold); font-size:1.4rem; transition:transform 0.25s ease; flex:none; margin-left:20px;}
+  .faq-q{width:100%; text-align:left; background:none; border:none; padding:22px 0; display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-family:'Fraunces',serif; font-size:1.05rem; color:var(--ink); font-weight:600;}
+  .faq-q .plus{color:var(--orange); font-size:1.4rem; transition:transform 0.25s ease; flex:none; margin-left:20px;}
   .faq-item.open .plus{transform:rotate(45deg);}
   .faq-a{max-height:0; overflow:hidden; transition:max-height 0.3s ease;}
-  .faq-a p{margin:0 0 22px; color:var(--slate); font-size:0.95rem; max-width:640px;}
+  .faq-a p{margin:0 0 22px; color:var(--ink-soft); font-size:0.95rem; max-width:640px;}
   .faq-item.open .faq-a{max-height:220px;}
 
-  /* ---------- Final CTA ---------- */
-  .final-cta{
-    background:linear-gradient(120deg, var(--navy), var(--navy-deep));
-    color:var(--white); text-align:center; border-radius:24px; padding:70px 40px;
-    margin:0 32px;
-  }
-  .final-cta h2{color:var(--white); font-size:clamp(1.9rem,3.4vw,2.7rem); max-width:600px; margin:0 auto 18px;}
-  .final-cta p{color:rgba(255,255,255,0.75); max-width:520px; margin:0 auto 30px; font-size:1.05rem;}
-  .final-cta .hero-ctas{justify-content:center;}
+  .final-cta{background:var(--ink); color:var(--white); text-align:center; border-radius:24px; padding:70px 40px; margin:0 32px; position:relative; overflow:hidden;}
+  .final-cta::before{content:""; position:absolute; inset:0; background:radial-gradient(circle at 85% 20%, rgba(232,93,44,0.28), transparent 50%); pointer-events:none;}
+  .final-cta h2{color:var(--white); font-size:clamp(1.9rem,3.4vw,2.7rem); max-width:600px; margin:0 auto 18px; position:relative;}
+  .final-cta p{color:rgba(255,255,255,0.75); max-width:520px; margin:0 auto 30px; font-size:1.05rem; position:relative;}
+  .final-cta .hero-ctas{justify-content:center; position:relative;}
 
-  /* ---------- Footer ---------- */
-  footer{background:var(--navy-deep); color:rgba(255,255,255,0.65); padding:60px 0 30px; font-size:0.9rem;}
+  footer{background:var(--white); color:var(--ink-soft); padding:60px 0 30px; font-size:0.9rem; border-top:1px solid var(--line);}
   .footer-grid{display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:40px; margin-bottom:40px;}
-  .footer-grid h5{color:var(--white); font-family:'Inter',sans-serif; font-size:0.85rem; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:16px;}
+  .footer-grid h5{color:var(--ink); font-family:'Inter',sans-serif; font-size:0.85rem; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:16px;}
   .footer-grid ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;}
-  .footer-grid a{color:rgba(255,255,255,0.65); text-decoration:none;}
-  .footer-grid a:hover{color:var(--gold);}
-  .footer-bottom{border-top:1px solid rgba(255,255,255,0.1); padding-top:24px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  .footer-grid a{color:var(--ink-soft); text-decoration:none;}
+  .footer-grid a:hover{color:var(--orange-deep);}
+  .footer-bottom{border-top:1px solid var(--line); padding-top:24px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
   @media (max-width:820px){.footer-grid{grid-template-columns:1fr 1fr;}}
 
-  /* ---------- Cookie banner ---------- */
-  #cookie-banner{
-    position:fixed; bottom:20px; left:20px; right:20px; max-width:520px; margin:0 auto;
-    background:var(--white); border:1px solid var(--line); border-radius:16px; padding:24px;
-    box-shadow:var(--shadow); z-index:200; display:none;
-  }
+  #cookie-banner{position:fixed; bottom:20px; left:20px; right:20px; max-width:520px; margin:0 auto; background:var(--white); border:1px solid var(--line); border-radius:16px; padding:24px; box-shadow:var(--shadow); z-index:200; display:none;}
   #cookie-banner h4{font-size:1rem; margin-bottom:8px;}
-  #cookie-banner p{font-size:0.88rem; color:var(--slate); margin:0 0 16px;}
+  #cookie-banner p{font-size:0.88rem; color:var(--ink-soft); margin:0 0 16px;}
   .cookie-actions{display:flex; gap:10px; flex-wrap:wrap;}
-  .cookie-actions button{
-    font-family:'Inter',sans-serif; font-size:0.85rem; font-weight:600; padding:10px 16px; border-radius:8px;
-    border:1px solid var(--line); background:var(--white); cursor:pointer;
-  }
-  .cookie-actions .accept{background:var(--navy); color:var(--white); border-color:var(--navy);}
-  .cookie-actions button:focus-visible{outline:3px solid var(--gold-soft); outline-offset:2px;}
+  .cookie-actions button{font-family:'Inter',sans-serif; font-size:0.85rem; font-weight:600; padding:10px 16px; border-radius:8px; border:1px solid var(--line); background:var(--white); cursor:pointer;}
+  .cookie-actions .accept{background:var(--orange); color:var(--white); border-color:var(--orange);}
+  .cookie-actions button:focus-visible{outline:3px solid var(--orange-soft); outline-offset:2px;}
 
   @media (max-width:960px){
     .hero-grid{grid-template-columns:1fr;}
-    .phone{margin:40px auto 0;}
+    .ripple-art{margin-top:20px;}
     .cost-band{grid-template-columns:1fr;}
     .benefits, .pricing-grid{grid-template-columns:1fr;}
     .plan.highlight{transform:none;}
@@ -396,8 +255,11 @@
 
 <header>
   <div class="wrap">
-    <nav>
-      <div class="logo">Call<span>Harbour</span></div>
+    <nav aria-label="Main navigation">
+      <div>
+        <div class="logo"><span class="dot" aria-hidden="true"></span>Call Station</div>
+        <div class="logo-tagline">We Answer When You Can't</div>
+      </div>
       <ul class="nav-links">
         <li><a href="#how">How it works</a></li>
         <li><a href="#industries">Industries</a></li>
@@ -405,41 +267,42 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
       <div class="nav-cta">
-        <a class="btn btn-ghost" href="#pricing" style="padding:11px 20px;">See pricing</a>
+        <a class="btn btn-outline" href="#pricing" style="padding:11px 20px;">See pricing</a>
         <a class="btn btn-primary" href="#pricing" style="padding:11px 22px;">Get started</a>
       </div>
     </nav>
   </div>
 </header>
 
+<main>
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">UK Call Answering</span>
-      <h1>Never lose another customer <em>to voicemail.</em></h1>
-      <p class="lead">CallHarbour answers your calls in your business name, books the appointment straight into your diary, and lets you know the moment it's done — so you can stay on the tools, not on the phone.</p>
+      <span class="eyebrow">UK Call Answering Service</span>
+      <h1>We answer <em>when you can't.</em></h1>
+      <p class="lead">Call Station answers your calls in your business name, books the appointment straight into your diary, and lets you know the moment it's done — so you never lose another customer to voicemail.</p>
       <div class="hero-ctas">
         <a href="#pricing" class="btn btn-primary">Get started today</a>
-        <a href="#how" class="btn btn-ghost">See how it works</a>
+        <a href="#how" class="btn btn-outline">See how it works</a>
       </div>
       <div class="hero-trust">
-        <div><strong>1,200+</strong>calls answered weekly</div>
-        <div><strong>98%</strong>calls picked up in 3 rings</div>
-        <div><strong>4.9/5</strong>average client rating</div>
+        <div><strong>1,200+</strong><span>calls answered weekly</span></div>
+        <div><strong>98%</strong><span>answered within 3 rings</span></div>
+        <div><strong>4.9/5</strong><span>average client rating</span></div>
       </div>
     </div>
-    <div class="phone" aria-hidden="true">
-      <div class="phone-screen">
-        <div class="phone-notch"></div>
-        <div class="phone-time">Today, 09:41</div>
-        <div class="call-steps">
-          <div class="call-step"><span class="dot"></span><div class="txt"><strong>Incoming call</strong><span>07700 900 123</span></div></div>
-          <div class="call-step"><span class="dot"></span><div class="txt"><strong>Answered as your business</strong><span>Greeted in your name</span></div></div>
-          <div class="call-step"><span class="dot"></span><div class="txt"><strong>Appointment booked</strong><span>Tue 10am — added to diary</span></div></div>
-          <div class="call-step"><span class="dot"></span><div class="txt"><strong>SMS sent to customer</strong><span>Booking confirmed</span></div></div>
-          <div class="call-step"><span class="dot"></span><div class="txt"><strong>You've been notified</strong><span>New booking — check details</span></div></div>
-        </div>
-      </div>
+
+    <div class="ripple-art" role="img" aria-label="Illustration of an incoming call being answered, with confirmations appearing around it">
+      <svg viewBox="0 0 400 400" fill="none">
+        <circle class="ripple-ring r1" cx="200" cy="200" r="90" stroke-width="2"/>
+        <circle class="ripple-ring r2" cx="200" cy="200" r="120" stroke-width="2"/>
+        <circle class="ripple-ring r3" cx="200" cy="200" r="150" stroke-width="2"/>
+        <circle cx="200" cy="200" r="66" fill="#FFF5F0" stroke="#E85D2C" stroke-width="2"/>
+        <path d="M182 182c-3 6-1 13 4 18l14 14c5 5 12 7 18 4l6-3c4-2 9-1 12 2l10 10c4 4 4 10 0 14l-5 5c-6 6-15 8-23 5-16-6-31-16-43-28s-22-27-28-43c-3-8-1-17 5-23l5-5c4-4 10-4 14 0l10 10c3 3 4 8 2 12l-3 6z" fill="#E85D2C"/>
+      </svg>
+      <div class="ripple-card rc1"><span class="badge"></span>Answered as your business</div>
+      <div class="ripple-card rc2"><span class="badge"></span>Booked — Tue 10:00am</div>
+      <div class="ripple-card rc3"><span class="badge"></span>You've been notified</div>
     </div>
   </div>
 </section>
@@ -457,7 +320,7 @@
   <div class="wrap">
     <div class="cost-band">
       <div class="cost-visual">
-        <span class="eyebrow" style="color:var(--gold);">The real cost</span>
+        <span class="eyebrow" style="color:var(--orange);">The real cost</span>
         <div class="big-stat">27%</div>
         <p>of calls to small UK businesses go unanswered during working hours — most of those customers simply call the next business on the list.</p>
       </div>
@@ -465,9 +328,12 @@
         <span class="eyebrow">Why missed calls cost money</span>
         <h2 style="margin-bottom:26px;">Every unanswered call is an enquiry walking to a competitor.</h2>
         <ul class="cost-list">
-          <li><span class="num">01</span><div><h4>You're on the tools, not by the phone</h4><p>Up a ladder, under a sink, or mid-appointment — the call still needs answering.</p></div></li>
-          <li><span class="num">02</span><div><h4>Voicemail loses the booking</h4><p>Most people don't leave a message. They hang up and ring someone else.</p></div></li>
-          <li><span class="num">03</span><div><h4>It looks unprofessional</h4><p>A ringing phone with no answer says "too busy for you" — not what you want customers to think.</p></div></li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7l9 6 9-6M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1z"/></svg>
+            <div><h4>You're on the tools, not by the phone</h4><p>Up a ladder, under a sink, or mid-appointment — the call still needs answering.</p></div></li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5-1.4C8.4 21.5 10.2 22 12 22z"/></svg>
+            <div><h4>Voicemail loses the booking</h4><p>Most people don't leave a message. They hang up and ring someone else.</p></div></li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8v5M12 16h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+            <div><h4>It looks unprofessional</h4><p>A ringing phone with no answer says "too busy for you" — not what you want customers to think.</p></div></li>
         </ul>
       </div>
     </div>
@@ -478,15 +344,15 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">How it works</span>
-      <h2>Five steps. No apps to learn, nothing to install.</h2>
+      <h2>Five steps. Nothing to install, nothing to learn.</h2>
       <p>Your calls are answered, booked and confirmed — you just get the notification.</p>
     </div>
     <div class="flow">
-      <div class="flow-step"><div class="circle">1</div><h4>Call comes in</h4><p>To your existing number, answered in your business name.</p></div>
-      <div class="flow-step"><div class="circle">2</div><h4>We answer</h4><p>A real person greets your customer professionally.</p></div>
-      <div class="flow-step"><div class="circle">3</div><h4>Appointment booked</h4><p>Straight into your calendar, no double-booking.</p></div>
-      <div class="flow-step"><div class="circle">4</div><h4>Customer confirmed</h4><p>They get an instant SMS confirming the booking.</p></div>
-      <div class="flow-step"><div class="circle">5</div><h4>You're notified</h4><p>SMS and email the moment it happens.</p></div>
+      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div><h4>Call comes in</h4><p>To your existing number, answered in your business name.</p></div>
+      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h4>We answer</h4><p>A real person greets your customer professionally.</p></div>
+      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg></div><h4>Appointment booked</h4><p>Straight into your calendar, no double-booking.</p></div>
+      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h4>Customer confirmed</h4><p>They get an instant SMS confirming the booking.</p></div>
+      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a1.99 1.99 0 0 1-3.4 0"/></svg></div><h4>You're notified</h4><p>SMS and email the moment it happens.</p></div>
     </div>
   </div>
 </section>
@@ -498,13 +364,13 @@
       <h2>Built around trades and practices that live on the phone.</h2>
     </div>
     <div class="industry-strip">
-      <div class="industry-card"><span class="tag">Trades</span><h4>Builders</h4><p>Book site visits and quotes without leaving the job.</p></div>
-      <div class="industry-card"><span class="tag">Trades</span><h4>Electricians</h4><p>Never miss an emergency call-out enquiry again.</p></div>
-      <div class="industry-card"><span class="tag">Trades</span><h4>Plumbers</h4><p>Urgent jobs answered fast, even at your busiest.</p></div>
-      <div class="industry-card"><span class="tag">Professional</span><h4>Accountants</h4><p>Client calls handled with a professional first impression.</p></div>
-      <div class="industry-card"><span class="tag">Healthcare</span><h4>Dentists</h4><p>Patients booked in while you're with a patient.</p></div>
-      <div class="industry-card"><span class="tag">Professional</span><h4>Solicitors</h4><p>Every enquiry captured, nothing left to chance.</p></div>
-      <div class="industry-card"><span class="tag">Property</span><h4>Estate Agents</h4><p>Viewings booked the moment a buyer calls.</p></div>
+      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.5-3.5a5 5 0 0 1-6.7 6.7l-6.9 6.9a2 2 0 0 1-2.8-2.8l6.9-6.9a5 5 0 0 1 6.7-6.7l-3.5 3.5z"/></svg><h4>Builders</h4><p>Book site visits and quotes without leaving the job.</p></div>
+      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 11-14h-7z"/></svg><h4>Electricians</h4><p>Never miss an emergency call-out enquiry again.</p></div>
+      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 21a4 4 0 0 1-4-4V9a5 5 0 0 1 10 0v3m-6-9v4m6-4v4"/><circle cx="17" cy="17" r="4"/></svg><h4>Plumbers</h4><p>Urgent jobs answered fast, even at your busiest.</p></div>
+      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><h4>Accountants</h4><p>Client calls handled with a professional first impression.</p></div>
+      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a5 5 0 0 0-5 5c0 3 2 4 2 7v3a3 3 0 0 0 6 0v-3c0-3 2-4 2-7a5 5 0 0 0-5-5z"/><path d="M9 21h6"/></svg><h4>Dentists</h4><p>Patients booked in while you're with a patient.</p></div>
+      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 7v13h6v-6h6v6h6V7z"/></svg><h4>Solicitors</h4><p>Every enquiry captured, nothing left to chance.</p></div>
+      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg><h4>Estate Agents</h4><p>Viewings booked the moment a buyer calls.</p></div>
     </div>
   </div>
 </section>
@@ -516,12 +382,12 @@
       <h2>Everything you gain by never picking up again.</h2>
     </div>
     <div class="benefits">
-      <div class="benefit"><div class="icon">✆</div><h4>Never miss another customer</h4><p>Every call answered, every time — even outside office hours.</p></div>
-      <div class="benefit"><div class="icon">⚑</div><h4>Stay focused on your work</h4><p>Keep your hands on the job while we handle the phone.</p></div>
-      <div class="benefit"><div class="icon">✓</div><h4>Look more professional</h4><p>Every caller greeted properly, in your business name.</p></div>
-      <div class="benefit"><div class="icon">↗</div><h4>Win more enquiries</h4><p>Answered calls convert. Missed calls don't.</p></div>
-      <div class="benefit"><div class="icon">⏱</div><h4>Save hours every week</h4><p>No more chasing voicemails or playing phone tag.</p></div>
-      <div class="benefit"><div class="icon">🔔</div><h4>Know instantly</h4><p>SMS and email the second a booking lands.</p></div>
+      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg><h4>Never miss another customer</h4><p>Every call answered, every time — even outside office hours.</p></div>
+      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg><h4>Stay focused on your work</h4><p>Keep your hands on the job while we handle the phone.</p></div>
+      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg><h4>Look more professional</h4><p>Every caller greeted properly, in your business name.</p></div>
+      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg><h4>Win more enquiries</h4><p>Answered calls convert. Missed calls don't.</p></div>
+      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><h4>Save hours every week</h4><p>No more chasing voicemails or playing phone tag.</p></div>
+      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a1.99 1.99 0 0 1-3.4 0"/></svg><h4>Know instantly</h4><p>SMS and email the second a booking lands.</p></div>
     </div>
   </div>
 </section>
@@ -534,14 +400,17 @@
     </div>
     <div class="testi-wrap">
       <div class="testi">
-        <p>Since we started with CallHarbour we've stopped losing quotes to competitors. Every call gets answered now, even when we're on a roof.</p>
+        <svg class="quote-mark" width="34" height="26" viewBox="0 0 34 26" fill="currentColor" aria-hidden="true"><path d="M0 26V15.6C0 6.9 5.4 1.3 14 0l1.7 4.3C10 5.7 7.3 9 7.3 13.3H14V26H0zm19 0V15.6c0-8.7 5.4-14.3 14-15.6l1.7 4.3c-5.7 1.4-8.4 4.7-8.4 9v.3H33V26H19z"/></svg>
+        <p>Since we started with Call Station we've stopped losing quotes to competitors. Every call gets answered now, even when we're on a roof.</p>
         <div class="testi-person"><div class="avatar">M</div><div><strong>Martin H.</strong><span>Roofing contractor, Leeds</span></div></div>
       </div>
       <div class="testi">
+        <svg class="quote-mark" width="34" height="26" viewBox="0 0 34 26" fill="currentColor" aria-hidden="true"><path d="M0 26V15.6C0 6.9 5.4 1.3 14 0l1.7 4.3C10 5.7 7.3 9 7.3 13.3H14V26H0zm19 0V15.6c0-8.7 5.4-14.3 14-15.6l1.7 4.3c-5.7 1.4-8.4 4.7-8.4 9v.3H33V26H19z"/></svg>
         <p>Patients used to get voicemail if we were mid-appointment. Now every call is booked straight into the diary without us lifting a finger.</p>
         <div class="testi-person"><div class="avatar">S</div><div><strong>Sarah P.</strong><span>Dental practice owner, Birmingham</span></div></div>
       </div>
       <div class="testi">
+        <svg class="quote-mark" width="34" height="26" viewBox="0 0 34 26" fill="currentColor" aria-hidden="true"><path d="M0 26V15.6C0 6.9 5.4 1.3 14 0l1.7 4.3C10 5.7 7.3 9 7.3 13.3H14V26H0zm19 0V15.6c0-8.7 5.4-14.3 14-15.6l1.7 4.3c-5.7 1.4-8.4 4.7-8.4 9v.3H33V26H19z"/></svg>
         <p>It's given us back our evenings. Calls that used to go to voicemail after 5pm are now booked appointments waiting for us the next morning.</p>
         <div class="testi-person"><div class="avatar">D</div><div><strong>David R.</strong><span>Electrical contractor, Sheffield</span></div></div>
       </div>
@@ -568,7 +437,7 @@
           <li>Appointment booking</li>
           <li>Instant SMS &amp; email alerts</li>
         </ul>
-        <button class="btn btn-dark" data-plan="starter">Buy now</button>
+        <button class="btn btn-outline" data-plan="starter">Buy now</button>
       </div>
       <div class="plan highlight">
         <span class="plan-tag">Most popular</span>
@@ -596,7 +465,7 @@
           <li>Instant SMS &amp; email alerts</li>
           <li>Priority support line</li>
         </ul>
-        <button class="btn btn-dark" data-plan="professional">Buy now</button>
+        <button class="btn btn-outline" data-plan="professional">Buy now</button>
       </div>
     </div>
   </div>
@@ -637,16 +506,17 @@
   <div class="final-cta">
     <h2>Stop losing customers to a ringing phone.</h2>
     <p>Join the UK tradespeople and practices who never miss a call — or a booking — again.</p>
-    <div class="hero-ctas"><a href="#pricing" class="btn btn-primary">Get started today</a></div>
+    <div class="hero-ctas"><a href="#pricing" class="btn btn-white">Get started today</a></div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="logo" style="margin-bottom:14px;">Call<span>Harbour</span></div>
-        <p style="max-width:260px; color:rgba(255,255,255,0.55); font-size:0.9rem;">UK-based call answering for businesses who can't afford to miss a customer.</p>
+        <div class="logo" style="margin-bottom:14px;"><span class="dot" aria-hidden="true"></span>Call Station</div>
+        <p style="max-width:260px; color:var(--ink-soft); font-size:0.9rem;">UK-based call answering for businesses who can't afford to miss a customer.</p>
       </div>
       <div>
         <h5>Company</h5>
@@ -662,7 +532,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 CallHarbour. All rights reserved.</span>
+      <span>© 2026 Call Station. All rights reserved.</span>
       <span>Registered in England &amp; Wales</span>
     </div>
   </div>
@@ -679,7 +549,6 @@
 </div>
 
 <script>
-  // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const item = btn.parentElement;
@@ -689,15 +558,11 @@
     });
   });
 
-  // Cookie banner logic
   const banner = document.getElementById('cookie-banner');
-  const stored = localStorage.getItem ? null : null; // no-op, using in-memory fallback below
   let cookieChoice = null;
   function showBanner(){ banner.style.display='block'; }
   function hideBanner(){ banner.style.display='none'; }
-  try{
-    cookieChoice = window.localStorage.getItem('ch_cookie_choice');
-  }catch(e){ cookieChoice = null; }
+  try{ cookieChoice = window.localStorage.getItem('ch_cookie_choice'); }catch(e){ cookieChoice = null; }
   if(!cookieChoice){ setTimeout(showBanner, 600); }
   function setChoice(val){
     cookieChoice = val;
@@ -709,7 +574,6 @@
   document.getElementById('cookie-manage').addEventListener('click', ()=>setChoice('managed'));
   document.getElementById('manage-cookies-link').addEventListener('click', (e)=>{ e.preventDefault(); showBanner(); });
 
-  // Pricing buttons -> placeholder for Stripe Checkout
   document.querySelectorAll('[data-plan]').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       alert('This is where Stripe Checkout would open for the "' + btn.dataset.plan + '" plan.');
