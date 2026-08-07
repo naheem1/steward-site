@@ -1,456 +1,953 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Call Station | UK Call Answering & Virtual Receptionist for Trades</title>
-<meta name="description" content="Call Station answers your business calls in your name, books the appointment straight into your diary, and notifies you instantly. UK call answering built for builders, electricians, plumbers, dentists and accountants.">
-<meta name="keywords" content="call answering service UK, virtual receptionist, missed call, appointment booking service, telephone answering for tradesmen">
-<link rel="canonical" href="https://www.callstation.co.uk/">
-<meta name="robots" content="index, follow">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Call Station">
-<meta property="og:title" content="Call Station | Never Lose Another Customer to Voicemail">
-<meta property="og:description" content="UK call answering that picks up in your business name, books the appointment, and tells you the moment it's done.">
-<meta property="og:url" content="https://www.callstation.co.uk/">
-<meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Call Station | UK Call Answering for Trades">
-<meta name="twitter:description" content="Never lose another customer to voicemail. Calls answered, appointments booked, you notified instantly.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Call Station",
-  "url": "https://www.callstation.co.uk/",
-  "description": "UK-based call answering and virtual receptionist service for tradespeople and professional practices.",
-  "areaServed": "GB",
-  "priceRange": "££",
-  "makesOffer": [
-    {"@type":"Offer","name":"Starter plan","price":"99","priceCurrency":"GBP"},
-    {"@type":"Offer","name":"Growth plan","price":"149","priceCurrency":"GBP"},
-    {"@type":"Offer","name":"Professional plan","price":"249","priceCurrency":"GBP"}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type":"Question","name":"Will callers know I'm not answering myself?","acceptedAnswer":{"@type":"Answer","text":"No. Every call is answered in your business name, so it sounds exactly like your own team picking up the phone."}},
-    {"@type":"Question","name":"Do I need to install anything?","acceptedAnswer":{"@type":"Answer","text":"No apps, no new hardware. We divert your existing number, and you get notified by SMS and email as normal."}},
-    {"@type":"Question","name":"Can I keep my existing phone number?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your current number stays exactly the same, customers won't notice any difference on their end."}},
-    {"@type":"Question","name":"What happens if I go over my call limit?","acceptedAnswer":{"@type":"Answer","text":"We'll let you know in advance. You can move up a plan at any time, with no long-term contract."}},
-    {"@type":"Question","name":"Can I cancel at any time?","acceptedAnswer":{"@type":"Answer","text":"Yes. There's no lock-in contract, you can cancel or change plans whenever you need to."}}
-  ]
-}
-</script>
+<title>Call Station | Never Miss Another Customer Call</title>
+<meta name="description" content="Call Station answers your business calls in your name, books appointments straight into your calendar, and notifies you instantly. Built for builders, tradespeople and professional practices across the UK.">
+<meta name="keywords" content="virtual receptionist UK, telephone answering service, call answering service, receptionist for small business, appointment booking service, business call answering">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--orange:#E85D2C;--orange-deep:#B7431B;--orange-soft:#FFE7DB;--orange-pale:#FFF5F0;--white:#FFFFFF;--ink:#1D1B1A;--ink-soft:#6B6663;--line:rgba(29,27,26,0.10);--shadow:0 24px 60px -24px rgba(184,67,20,0.35);--radius:16px;}
+  :root{
+    --orange: #E85D2C;
+    --orange-deep: #B7431B;
+    --peach: #FFE7DB;
+    --white: #FFFFFF;
+    --offwhite: #FFF5F0;
+    --ink: #1D1B1A;
+    --grey: #6B6663;
+    --line: rgba(29,27,26,0.10);
+    --radius: 4px;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --maxw: 1180px;
+  }
+
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}*{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;}}
-  body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;}
-  h1,h2,h3,h4{font-family:'Fraunces',serif;color:var(--ink);margin:0;font-weight:600;letter-spacing:-0.01em;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:var(--serif);
+    font-weight:600;
+    line-height:1.12;
+    margin:0 0 0.5em 0;
+    letter-spacing:-0.01em;
+  }
+  p{margin:0 0 1em 0;}
   a{color:inherit;}
-  img,svg{max-width:100%;display:block;}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
-  .eyebrow{font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--orange-deep);font-weight:700;margin-bottom:14px;display:inline-block;}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;border-radius:10px;font-weight:700;font-size:0.98rem;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:transform 0.2s ease,box-shadow 0.2s ease,background 0.2s ease;font-family:'Inter',sans-serif;}
-  .btn:focus-visible{outline:3px solid var(--orange-soft);outline-offset:2px;}
-  .btn-primary{background:var(--orange);color:var(--white);}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 26px -10px rgba(232,93,44,0.55);background:var(--orange-deep);}
-  .btn-outline{background:transparent;color:var(--ink);border-color:var(--ink);}
-  .btn-outline:hover{background:var(--ink);color:var(--white);}
-  .btn-white{background:var(--white);color:var(--orange-deep);}
-  .btn-white:hover{transform:translateY(-2px);box-shadow:0 14px 26px -10px rgba(0,0,0,0.25);}
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
-  nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
-  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.4rem;color:var(--ink);letter-spacing:-0.01em;display:flex;align-items:center;gap:8px;}
-  .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--orange);display:inline-block;}
-  .logo-tagline{font-size:0.7rem;color:var(--ink-soft);letter-spacing:0.04em;margin-top:1px;}
-  @media (max-width:640px){.logo-tagline{display:none;}}
-  .nav-links{display:flex;gap:34px;list-style:none;margin:0;padding:0;}
-  .nav-links a{color:var(--ink-soft);text-decoration:none;font-size:0.94rem;font-weight:600;}
-  .nav-links a:hover{color:var(--orange-deep);}
-  .nav-cta{display:flex;gap:14px;align-items:center;}
-  .nav-toggle{display:none;background:none;border:none;color:var(--ink);font-size:1.6rem;cursor:pointer;}
-  @media (max-width:880px){.nav-links{display:none;}.nav-toggle{display:block;}}
-  .hero{background:var(--white);padding:80px 0 60px;position:relative;overflow:hidden;}
-  .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:60px;align-items:center;position:relative;}
-  .hero h1{font-size:clamp(2.5rem,4.6vw,3.8rem);line-height:1.06;}
-  .hero h1 em{font-style:italic;color:var(--orange);}
-  .hero p.lead{font-size:1.16rem;color:var(--ink-soft);max-width:520px;margin:22px 0 34px;}
-  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
-  .hero-trust{margin-top:44px;display:flex;gap:32px;flex-wrap:wrap;}
-  .hero-trust strong{color:var(--ink);display:block;font-family:'Fraunces',serif;font-size:1.6rem;font-weight:600;}
-  .hero-trust span{color:var(--ink-soft);font-size:0.85rem;}
-  .ripple-art{position:relative;width:100%;aspect-ratio:1/1;max-width:440px;margin:0 auto;}
-  .ripple-art svg{width:100%;height:100%;}
-  .ripple-ring{fill:none;stroke:var(--orange);opacity:0;transform-origin:center;animation:rippleOut 3.2s ease-out infinite;}
-  .ripple-ring.r2{animation-delay:1.05s;}
-  .ripple-ring.r3{animation-delay:2.1s;}
-  @keyframes rippleOut{0%{opacity:0.55;stroke-width:2;}70%{opacity:0;}100%{opacity:0;}}
-  .ripple-card{position:absolute;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-size:0.82rem;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:10px;opacity:0;animation:cardPop 0.5s ease forwards;}
-  .ripple-card .badge{width:8px;height:8px;border-radius:50%;background:var(--orange);flex:none;}
-  .rc1{top:6%;left:0%;animation-delay:0.4s;}
-  .rc2{top:38%;right:-4%;animation-delay:1.3s;}
-  .rc3{bottom:10%;left:6%;animation-delay:2.2s;}
-  @keyframes cardPop{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
-  .trusted{background:var(--orange-pale);padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-  .trusted .wrap{display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:space-between;}
-  .trusted p{margin:0;color:var(--orange-deep);font-size:0.86rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;}
-  .trade-list{display:flex;gap:30px;flex-wrap:wrap;color:var(--ink);font-family:'Fraunces',serif;font-size:1.05rem;}
-  section{padding:100px 0;}
-  .section-head{max-width:640px;margin-bottom:56px;}
-  .section-head h2{font-size:clamp(1.9rem,3vw,2.5rem);line-height:1.16;}
-  .section-head p{color:var(--ink-soft);font-size:1.08rem;margin-top:16px;}
-  .section-alt{background:var(--orange-pale);}
-  .cost-band{display:grid;grid-template-columns:0.9fr 1.1fr;gap:70px;align-items:center;}
-  .cost-visual{background:var(--ink);border-radius:20px;padding:40px;color:var(--white);position:relative;overflow:hidden;}
-  .cost-visual .big-stat{font-family:'Fraunces',serif;font-size:3.8rem;font-weight:700;color:var(--orange);line-height:1;}
-  .cost-visual p{color:rgba(255,255,255,0.75);margin-top:14px;font-size:0.98rem;}
-  .cost-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:22px;}
-  .cost-list li{display:flex;gap:18px;align-items:flex-start;padding-bottom:22px;border-bottom:1px solid var(--line);}
-  .cost-list li:last-child{border-bottom:none;padding-bottom:0;}
-  .cost-list .ic{flex:none;width:38px;height:38px;color:var(--orange);}
-  .cost-list h4{font-size:1.08rem;margin-bottom:4px;}
-  .cost-list p{margin:0;color:var(--ink-soft);font-size:0.96rem;}
-  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:20px;}
-  .flow::before{content:"";position:absolute;top:30px;left:8%;right:8%;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 10px,transparent 10px 18px);}
-  .flow-step{text-align:center;padding:0 12px;position:relative;}
-  .flow-step .circle{width:60px;height:60px;border-radius:50%;background:var(--white);border:2px solid var(--orange);color:var(--orange-deep);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;position:relative;z-index:2;}
-  .flow-step h4{font-size:1rem;margin-bottom:6px;}
-  .flow-step p{font-size:0.88rem;color:var(--ink-soft);margin:0;}
-  @media (max-width:880px){.flow{grid-template-columns:1fr;gap:34px;}.flow::before{display:none;}}
-  .industry-strip{display:flex;gap:18px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory;}
-  .industry-strip::-webkit-scrollbar{height:6px;}
-  .industry-strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:6px;}
-  .industry-card{flex:0 0 240px;scroll-snap-align:start;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;}
-  .industry-card .ic{width:34px;height:34px;color:var(--orange);margin-bottom:14px;}
-  .industry-card h4{font-size:1.1rem;margin-bottom:8px;}
-  .industry-card p{font-size:0.9rem;color:var(--ink-soft);margin:0;}
-  .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
-  .benefit{background:var(--white);padding:38px 30px;}
-  .benefit .ic{width:40px;height:40px;color:var(--orange);margin-bottom:18px;}
-  .benefit h4{font-size:1.08rem;margin-bottom:8px;}
-  .benefit p{font-size:0.93rem;color:var(--ink-soft);margin:0;}
-  @media (max-width:820px){.benefits{grid-template-columns:1fr;}}
-  .testi-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .testi{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;position:relative;}
-  .testi .quote-mark{color:var(--orange-soft);position:absolute;top:14px;left:22px;}
-  .testi p{margin:26px 0 20px;color:var(--ink);font-size:0.98rem;position:relative;z-index:1;}
-  .testi-person{display:flex;align-items:center;gap:12px;}
-  .avatar{width:42px;height:42px;border-radius:50%;background:var(--orange-soft);color:var(--orange-deep);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:700;}
-  .testi-person strong{display:block;font-size:0.92rem;color:var(--ink);}
-  .testi-person span{font-size:0.82rem;color:var(--ink-soft);}
-  @media (max-width:900px){.testi-wrap{grid-template-columns:1fr;}}
-  .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch;}
-  .plan{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:36px 30px;display:flex;flex-direction:column;}
-  .plan.highlight{background:var(--ink);color:var(--white);border-color:var(--ink);transform:translateY(-14px);box-shadow:var(--shadow);}
-  .plan.highlight h3,.plan.highlight .price{color:var(--white);}
-  .plan.highlight .plan-tag{background:var(--orange);color:var(--white);}
-  .plan-tag{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;background:var(--orange-soft);color:var(--orange-deep);padding:5px 12px;border-radius:20px;margin-bottom:16px;align-self:flex-start;}
-  .plan h3{font-size:1.25rem;margin-bottom:6px;}
-  .price{font-family:'Fraunces',serif;font-size:2.5rem;font-weight:700;color:var(--ink);margin:6px 0 4px;}
-  .price span{font-size:1rem;font-weight:400;color:var(--ink-soft);}
-  .plan.highlight .price span{color:rgba(255,255,255,0.6);}
-  .plan-desc{font-size:0.9rem;color:var(--ink-soft);margin-bottom:22px;}
-  .plan.highlight .plan-desc{color:rgba(255,255,255,0.7);}
-  .plan ul{list-style:none;margin:0 0 28px;padding:0;flex:1;display:flex;flex-direction:column;gap:12px;}
-  .plan li{display:flex;gap:10px;font-size:0.92rem;align-items:flex-start;}
-  .plan li::before{content:"✓";color:var(--orange);font-weight:700;flex:none;}
-  .plan.highlight li::before{color:var(--orange);}
-  .plan .btn{width:100%;}
-  .faq{max-width:800px;margin:0 auto;}
-  .faq-item{border-bottom:1px solid var(--line);}
-  .faq-q{width:100%;text-align:left;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'Fraunces',serif;font-size:1.05rem;color:var(--ink);font-weight:600;}
-  .faq-q .plus{color:var(--orange);font-size:1.4rem;transition:transform 0.25s ease;flex:none;margin-left:20px;}
-  .faq-item.open .plus{transform:rotate(45deg);}
-  .faq-a{max-height:0;overflow:hidden;transition:max-height 0.3s ease;}
-  .faq-a p{margin:0 0 22px;color:var(--ink-soft);font-size:0.95rem;max-width:640px;}
-  .faq-item.open .faq-a{max-height:220px;}
-  .final-cta{background:var(--ink);color:var(--white);text-align:center;border-radius:24px;padding:70px 40px;margin:0 32px;position:relative;overflow:hidden;}
-  .final-cta::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(232,93,44,0.28),transparent 50%);pointer-events:none;}
-  .final-cta h2{color:var(--white);font-size:clamp(1.9rem,3.4vw,2.7rem);max-width:600px;margin:0 auto 18px;position:relative;}
-  .final-cta p{color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 30px;font-size:1.05rem;position:relative;}
-  .final-cta .hero-ctas{justify-content:center;position:relative;}
-  footer{background:var(--white);color:var(--ink-soft);padding:60px 0 30px;font-size:0.9rem;border-top:1px solid var(--line);}
-  .footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px;margin-bottom:40px;}
-  .footer-grid h5{color:var(--ink);font-family:'Inter',sans-serif;font-size:0.85rem;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:16px;}
-  .footer-grid ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;}
-  .footer-grid a{color:var(--ink-soft);text-decoration:none;}
-  .footer-grid a:hover{color:var(--orange-deep);}
-  .footer-bottom{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
-  @media (max-width:820px){.footer-grid{grid-template-columns:1fr 1fr;}}
-  #cookie-banner{position:fixed;bottom:20px;left:20px;right:20px;max-width:520px;margin:0 auto;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--shadow);z-index:200;display:none;}
-  #cookie-banner h4{font-size:1rem;margin-bottom:8px;}
-  #cookie-banner p{font-size:0.88rem;color:var(--ink-soft);margin:0 0 16px;}
-  .cookie-actions{display:flex;gap:10px;flex-wrap:wrap;}
-  .cookie-actions button{font-family:'Inter',sans-serif;font-size:0.85rem;font-weight:600;padding:10px 16px;border-radius:8px;border:1px solid var(--line);background:var(--white);cursor:pointer;}
-  .cookie-actions .accept{background:var(--orange);color:var(--white);border-color:var(--orange);}
-  .cookie-actions button:focus-visible{outline:3px solid var(--orange-soft);outline-offset:2px;}
-  @media (max-width:960px){.hero-grid{grid-template-columns:1fr;}.ripple-art{margin-top:20px;}.cost-band{grid-template-columns:1fr;}.benefits,.pricing-grid{grid-template-columns:1fr;}.plan.highlight{transform:none;}}
-  @media (max-width:640px){section{padding:64px 0;}.wrap{padding:0 20px;}}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+  .eyebrow{
+    font-family:var(--sans);
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--orange-deep);
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--orange-deep); display:inline-block;}
+
+  section{padding:96px 0;}
+  @media (max-width:720px){ section{padding:64px 0;} }
+
+  /* Buttons */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:15px 30px;
+    border-radius:var(--radius);
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:15.5px;
+    text-decoration:none;
+    cursor:pointer;
+    border:1.5px solid transparent;
+    transition:transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+    white-space:nowrap;
+  }
+  .btn:focus-visible{outline:3px solid var(--orange-deep); outline-offset:3px;}
+  .btn-primary{ background:var(--orange); color:#fff; box-shadow:0 1px 2px rgba(29,27,26,0.12); }
+  .btn-primary:hover{ background:var(--orange-deep); transform:translateY(-1px); box-shadow:0 8px 20px rgba(232,93,44,0.28); }
+  .btn-secondary{ background:transparent; color:var(--ink); border-color:rgba(29,27,26,0.28); }
+  .btn-secondary:hover{ border-color:var(--ink); background:rgba(29,27,26,0.03); }
+  .btn-onprimary{ background:#fff; color:var(--orange-deep); }
+  .btn-onprimary:hover{ background:var(--peach); }
+  .btn-outline-white{ background:transparent; color:#fff; border-color:rgba(255,255,255,0.55); }
+  .btn-outline-white:hover{ background:rgba(255,255,255,0.12); border-color:#fff; }
+
+  /* ===== Header ===== */
+  header{
+    position:sticky; top:0; z-index:60;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 28px;
+    max-width:var(--maxw); margin:0 auto;
+  }
+  .logo{
+    font-family:var(--serif); font-weight:700; font-size:22px; letter-spacing:-0.01em;
+    text-decoration:none; color:var(--ink);
+    display:flex; align-items:center; gap:10px;
+  }
+  .logo-mark{
+    width:30px; height:30px; border-radius:50%;
+    background:var(--orange);
+    display:inline-flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .logo-mark svg{width:15px; height:15px;}
+  .nav-links{ display:flex; align-items:center; gap:36px; list-style:none; margin:0; padding:0; }
+  .nav-links a{ text-decoration:none; font-size:15px; font-weight:500; color:var(--ink); opacity:0.82; transition:opacity 0.15s;}
+  .nav-links a:hover{opacity:1;}
+  .nav-right{display:flex; align-items:center; gap:18px;}
+  .nav-phone{font-size:14.5px; font-weight:600; text-decoration:none; color:var(--ink); display:flex; align-items:center; gap:7px;}
+  .nav-toggle{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .nav-toggle span{display:block; width:22px; height:2px; background:var(--ink); margin:5px 0; transition:0.2s;}
+
+  @media (max-width:900px){
+    .nav-links, .nav-phone{display:none;}
+    .nav-toggle{display:block;}
+    .nav-links.open{
+      display:flex; flex-direction:column; position:absolute; top:100%; left:0; right:0;
+      background:#fff; padding:20px 28px; gap:18px; border-bottom:1px solid var(--line);
+    }
+  }
+
+  /* ===== Hero ===== */
+  .hero{
+    padding:78px 0 90px;
+    background:linear-gradient(180deg, var(--offwhite) 0%, #fff 100%);
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
+    max-width:var(--maxw); margin:0 auto; padding:0 28px;
+  }
+  .hero h1{
+    font-size:clamp(38px, 4.6vw, 60px);
+    max-width:12.5ch;
+    margin-top:18px;
+  }
+  .hero-sub{
+    font-size:18.5px; color:var(--grey); max-width:46ch; margin-bottom:32px;
+  }
+  .hero-ctas{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:28px;}
+  .hero-proof{display:flex; align-items:center; gap:12px; font-size:14px; color:var(--grey);}
+  .hero-proof .stars{color:var(--orange); letter-spacing:2px; font-size:15px;}
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr; gap:48px;}
+  }
+
+  /* Signature animation: the call flow */
+  .callflow{
+    position:relative;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:34px 30px 30px;
+    box-shadow:0 30px 70px -30px rgba(29,27,26,0.22);
+  }
+  .phone-frame{
+    max-width:270px; margin:0 auto;
+    border-radius:34px;
+    background:var(--ink);
+    padding:12px;
+    box-shadow:0 20px 40px -18px rgba(0,0,0,0.35);
+  }
+  .phone-screen{
+    background:linear-gradient(180deg, #fff 0%, var(--offwhite) 100%);
+    border-radius:24px;
+    padding:22px 18px 26px;
+    min-height:340px;
+    position:relative;
+    overflow:hidden;
+  }
+  .phone-time{font-size:11px; color:var(--grey); text-align:center; margin-bottom:16px; font-weight:600; letter-spacing:0.03em;}
+  .ripple-wrap{
+    display:flex; align-items:center; justify-content:center;
+    position:relative; height:88px; margin-bottom:18px;
+  }
+  .ripple{
+    position:absolute; border-radius:50%; border:1.5px solid var(--orange);
+    opacity:0; animation:rippleOut 2.6s ease-out infinite;
+  }
+  .ripple.r2{animation-delay:0.7s;}
+  .ripple.r3{animation-delay:1.4s;}
+  @keyframes rippleOut{
+    0%{width:44px; height:44px; opacity:0.55;}
+    100%{width:96px; height:96px; opacity:0;}
+  }
+  .call-icon{
+    width:44px; height:44px; border-radius:50%; background:var(--orange);
+    display:flex; align-items:center; justify-content:center; position:relative; z-index:2;
+    box-shadow:0 6px 16px rgba(232,93,44,0.35);
+  }
+  .call-icon svg{width:19px; height:19px; fill:#fff;}
+  .step-card{
+    background:#fff; border:1px solid var(--line); border-radius:12px;
+    padding:12px 14px; font-size:13px; font-weight:600; color:var(--ink);
+    display:flex; align-items:center; gap:10px;
+    opacity:0; transform:translateY(8px);
+    animation:stepIn 6s ease-in-out infinite;
+    box-shadow:0 4px 14px -6px rgba(29,27,26,0.15);
+  }
+  .step-card + .step-card{margin-top:9px;}
+  .step-dot{width:7px; height:7px; border-radius:50%; background:var(--orange); flex-shrink:0;}
+  .step-card:nth-child(1){animation-delay:0s;}
+  .step-card:nth-child(2){animation-delay:0.35s;}
+  .step-card:nth-child(3){animation-delay:0.7s;}
+  .step-card:nth-child(4){animation-delay:1.05s;}
+  @keyframes stepIn{
+    0%{opacity:0; transform:translateY(8px);}
+    8%{opacity:1; transform:translateY(0);}
+    92%{opacity:1; transform:translateY(0);}
+    100%{opacity:1; transform:translateY(0);}
+  }
+  .callflow-caption{
+    text-align:center; font-size:13px; color:var(--grey); margin-top:22px; font-weight:500;
+  }
+
+  /* ===== Trust strip ===== */
+  .trust{ background:var(--ink); color:#fff; padding:40px 0; }
+  .trust-inner{display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;}
+  .trust-stars{display:flex; align-items:center; gap:12px;}
+  .trust-stars .stars{color:var(--orange); font-size:18px; letter-spacing:3px;}
+  .trust-stars span{font-size:14.5px; color:rgba(255,255,255,0.78); font-weight:500;}
+  .trust-chips{display:flex; gap:10px; flex-wrap:wrap;}
+  .chip{
+    font-size:13px; font-weight:600; padding:8px 16px; border-radius:999px;
+    border:1px solid rgba(255,255,255,0.22); color:rgba(255,255,255,0.88);
+  }
+
+  /* ===== Problem ===== */
+  .problem{ background:var(--white); }
+  .problem-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+  .problem h2{ font-size:clamp(30px,3.4vw,42px); max-width:14ch; }
+  .stat-block{
+    border-left:2px solid var(--orange); padding-left:22px;
+  }
+  .stat-block .num{ font-family:var(--serif); font-size:56px; color:var(--orange-deep); line-height:1; margin-bottom:6px; }
+  .stat-block .lbl{ font-size:14.5px; color:var(--grey); max-width:26ch; }
+  @media (max-width:820px){ .problem-grid{grid-template-columns:1fr; gap:36px;} }
+
+  /* ===== How it works — vertical timeline ===== */
+  .timeline{ background:var(--offwhite); }
+  .timeline-head{ max-width:640px; margin-bottom:60px; }
+  .timeline-list{ position:relative; max-width:820px; margin:0 auto; }
+  .timeline-list::before{
+    content:""; position:absolute; left:23px; top:10px; bottom:10px; width:1.5px;
+    background:linear-gradient(180deg, var(--orange) 0%, rgba(232,93,44,0.15) 100%);
+  }
+  .tl-item{ position:relative; padding-left:70px; padding-bottom:46px; }
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-marker{
+    position:absolute; left:0; top:0; width:48px; height:48px; border-radius:50%;
+    background:#fff; border:1.5px solid var(--orange); display:flex; align-items:center; justify-content:center;
+  }
+  .tl-marker svg{display:block; width:20px; height:20px; stroke:var(--orange-deep); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;}
+  .tl-item h3{ font-size:21px; margin-bottom:6px; }
+  .tl-item p{ color:var(--grey); font-size:15.5px; max-width:52ch; margin:0; }
+
+  /* ===== Benefits ===== */
+  .benefits-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--line); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  .benefit{ background:#fff; padding:34px 28px; }
+  .benefit-num{ font-family:var(--serif); font-size:14px; color:var(--orange-deep); font-weight:600; margin-bottom:14px; display:block;}
+  .benefit h3{ font-size:19px; margin-bottom:8px; }
+  .benefit p{ color:var(--grey); font-size:14.5px; margin:0; }
+  @media (max-width:900px){ .benefits-grid{grid-template-columns:1fr;} }
+
+  /* ===== Industries ===== */
+  .industries-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .ind-card{
+    background:var(--offwhite); border-radius:14px; padding:26px 22px 24px;
+    border:1px solid transparent; transition:border-color 0.2s, transform 0.2s;
+  }
+  .ind-card:hover{ border-color:var(--orange); transform:translateY(-3px); }
+  .ind-card .ind-icon{ width:38px; height:38px; aspect-ratio:1/1; margin-bottom:16px; flex-shrink:0; }
+  .ind-card .ind-icon svg{ display:block; width:100%; height:100%; stroke:var(--orange-deep); fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+  .ind-card h3{ font-size:17px; margin-bottom:6px; }
+  .ind-card p{ font-size:13.5px; color:var(--grey); margin:0; }
+  @media (max-width:900px){ .industries-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .industries-grid{grid-template-columns:1fr;} }
+
+  /* ===== Pricing ===== */
+  .pricing{ background:var(--ink); color:#fff; }
+  .pricing .eyebrow{ color:var(--peach); }
+  .pricing .eyebrow::before{ background:var(--peach); }
+  .pricing-head{ max-width:640px; margin-bottom:52px; }
+  .pricing-head h2{ color:#fff; }
+  .pricing-head p{ color:rgba(255,255,255,0.65); }
+  .pricing-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; align-items:stretch; }
+  .price-card{
+    background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.14);
+    border-radius:16px; padding:34px 28px; display:flex; flex-direction:column;
+  }
+  .price-card.featured{
+    background:var(--orange); border-color:var(--orange); position:relative;
+    transform:scale(1.035);
+  }
+  .price-badge{
+    position:absolute; top:-13px; left:50%; transform:translateX(-50%);
+    background:var(--ink); color:#fff; font-size:12px; font-weight:700;
+    padding:6px 16px; border-radius:999px; letter-spacing:0.04em;
+  }
+  .price-card h3{ font-size:20px; margin-bottom:4px; }
+  .price-card .price-desc{ font-size:13.5px; color:rgba(255,255,255,0.6); margin-bottom:20px; }
+  .price-card.featured .price-desc{ color:rgba(255,255,255,0.85); }
+  .price-amt{ font-family:var(--serif); font-size:42px; margin-bottom:2px; }
+  .price-per{ font-size:13px; color:rgba(255,255,255,0.55); margin-bottom:22px; }
+  .price-card.featured .price-per{ color:rgba(255,255,255,0.8); }
+  .price-feats{ list-style:none; margin:0 0 26px 0; padding:0; flex-grow:1; }
+  .price-feats li{ font-size:14.5px; padding:9px 0; border-top:1px solid rgba(255,255,255,0.1); display:flex; gap:10px; }
+  .price-card.featured .price-feats li{ border-top-color:rgba(255,255,255,0.22); }
+  .price-feats li:first-child{ border-top:none; }
+  .price-feats svg{ width:16px; height:16px; flex-shrink:0; margin-top:3px; stroke:var(--orange); fill:none; stroke-width:2.2; }
+  .price-card.featured .price-feats svg{ stroke:#fff; }
+  .price-fine{ font-size:12px; color:rgba(255,255,255,0.5); text-align:center; margin-top:14px; line-height:1.5; }
+  .price-card.featured .price-fine{ color:rgba(255,255,255,0.85); }
+  @media (max-width:900px){ .pricing-grid{grid-template-columns:1fr;} .price-card.featured{transform:none;} }
+
+  /* ===== Testimonials ===== */
+  .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .testi-card{
+    background:var(--offwhite); border-radius:14px; padding:30px 26px; display:flex; flex-direction:column;
+  }
+  .testi-card .stars{ color:var(--orange); letter-spacing:2px; font-size:14px; margin-bottom:16px; }
+  .testi-card p.quote{ font-size:15.5px; color:var(--ink); margin-bottom:22px; flex-grow:1; }
+  .testi-who{ display:flex; align-items:center; gap:12px; }
+  .testi-avatar{
+    width:42px; height:42px; border-radius:50%; background:var(--peach);
+    display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-weight:600; color:var(--orange-deep);
+    flex-shrink:0;
+  }
+  .testi-who .name{ font-weight:600; font-size:14.5px; }
+  .testi-who .role{ font-size:13px; color:var(--grey); }
+  @media (max-width:900px){ .testi-grid{grid-template-columns:1fr;} }
+
+  /* ===== FAQ ===== */
+  .faq{ background:var(--offwhite); }
+  .faq-list{ max-width:760px; margin:0 auto; }
+  .faq-item{ border-bottom:1px solid var(--line); }
+  .faq-q{
+    width:100%; text-align:left; background:none; border:none; cursor:pointer;
+    padding:22px 4px; display:flex; align-items:center; justify-content:space-between; gap:20px;
+    font-family:var(--sans); font-size:16.5px; font-weight:600; color:var(--ink);
+  }
+  .faq-q:focus-visible{ outline:3px solid var(--orange-deep); outline-offset:2px; }
+  .faq-q .plus{ flex-shrink:0; width:22px; height:22px; position:relative; }
+  .faq-q .plus::before, .faq-q .plus::after{
+    content:""; position:absolute; background:var(--orange-deep); top:50%; left:50%; transform:translate(-50%,-50%);
+  }
+  .faq-q .plus::before{ width:14px; height:1.6px; }
+  .faq-q .plus::after{ width:1.6px; height:14px; transition:transform 0.25s ease; }
+  .faq-item.open .faq-q .plus::after{ transform:translate(-50%,-50%) rotate(90deg) scaleY(0); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height 0.3s ease; }
+  .faq-a-inner{ padding:0 4px 22px; color:var(--grey); font-size:15px; max-width:64ch; }
+  .faq-item.open .faq-a{ max-height:300px; }
+
+  /* ===== Final CTA ===== */
+  .final-cta{ background:var(--orange); color:#fff; text-align:center; padding:90px 0; }
+  .final-cta h2{ color:#fff; font-size:clamp(30px,4vw,46px); max-width:16ch; margin:0 auto 16px; }
+  .final-cta p{ color:rgba(255,255,255,0.9); font-size:17px; max-width:48ch; margin:0 auto 34px; }
+  .final-ctas{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+
+  /* ===== Footer ===== */
+  footer{ background:var(--ink); color:rgba(255,255,255,0.75); padding:64px 0 30px; font-size:14px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:36px; margin-bottom:48px; }
+  .footer-logo{ font-family:var(--serif); font-weight:700; font-size:21px; color:#fff; margin-bottom:12px; }
+  .footer-col h4{ font-family:var(--sans); font-size:13px; text-transform:uppercase; letter-spacing:0.08em; color:rgba(255,255,255,0.5); margin-bottom:16px; font-weight:600; }
+  .footer-col ul{ list-style:none; margin:0; padding:0; }
+  .footer-col li{ margin-bottom:11px; }
+  .footer-col a{ text-decoration:none; color:rgba(255,255,255,0.75); }
+  .footer-col a:hover{ color:#fff; }
+  .footer-bottom{ border-top:1px solid rgba(255,255,255,0.12); padding-top:26px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; font-size:12.5px; color:rgba(255,255,255,0.5); }
+  @media (max-width:820px){ .footer-grid{grid-template-columns:1fr 1fr; } }
+
+  /* ===== Cookie banner ===== */
+  .cookie-banner{
+    position:fixed; left:20px; right:20px; bottom:20px; z-index:100;
+    max-width:560px; margin:0 auto;
+    background:#fff; border:1px solid var(--line); border-radius:14px;
+    padding:22px 24px; box-shadow:0 20px 50px -12px rgba(29,27,26,0.3);
+    transform:translateY(140%); transition:transform 0.4s ease;
+  }
+  .cookie-banner.show{ transform:translateY(0); }
+  .cookie-banner p{ font-size:13.5px; color:var(--grey); margin-bottom:16px; }
+  .cookie-actions{ display:flex; gap:10px; flex-wrap:wrap; }
+  .cookie-actions .btn{ padding:10px 16px; font-size:13.5px; }
+  .cookie-modal{
+    position:fixed; inset:0; background:rgba(29,27,26,0.5); z-index:110;
+    display:none; align-items:center; justify-content:center; padding:20px;
+  }
+  .cookie-modal.show{ display:flex; }
+  .cookie-modal-box{ background:#fff; border-radius:14px; max-width:460px; width:100%; padding:30px; }
+  .cookie-modal-box h3{ font-size:20px; margin-bottom:16px; }
+  .cookie-pref-row{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; border-top:1px solid var(--line); }
+  .cookie-pref-row:first-of-type{ border-top:none; }
+  .cookie-pref-row div p{ margin:2px 0 0; font-size:12.5px; color:var(--grey); }
+  .switch{ position:relative; width:42px; height:24px; flex-shrink:0; }
+  .switch input{ opacity:0; width:0; height:0; }
+  .switch .slider{ position:absolute; inset:0; background:#ccc; border-radius:999px; cursor:pointer; transition:0.2s; }
+  .switch .slider::before{ content:""; position:absolute; width:18px; height:18px; left:3px; top:3px; background:#fff; border-radius:50%; transition:0.2s; }
+  .switch input:checked + .slider{ background:var(--orange); }
+  .switch input:checked + .slider::before{ transform:translateX(18px); }
+  .switch input:disabled + .slider{ opacity:0.5; }
+
+  /* skip link */
+  .skip-link{
+    position:absolute; left:-999px; top:0; background:var(--orange); color:#fff; padding:12px 20px;
+    z-index:200; border-radius:0 0 8px 0; text-decoration:none; font-weight:600;
+  }
+  .skip-link:focus{ left:0; }
+
+  :focus-visible{ outline:3px solid var(--orange-deep); outline-offset:2px; }
 </style>
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
 <header>
-  <div class="wrap">
-    <nav aria-label="Main navigation">
-      <div>
-        <div class="logo"><span class="dot" aria-hidden="true"></span>Call Station</div>
-        <div class="logo-tagline">We Answer When You Can't</div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#how">How it works</a></li>
-        <li><a href="#industries">Industries</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a class="btn btn-outline" href="#pricing" style="padding:11px 20px;">See pricing</a>
-        <a class="btn btn-primary" href="#pricing" style="padding:11px 22px;">Get started</a>
-      </div>
-    </nav>
-  </div>
+  <nav class="nav" aria-label="Primary">
+    <a href="#main" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="white"/></svg></span>
+      Call Station
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:08001234567" class="nav-phone">0800 123 4567</a>
+      <a href="#pricing" class="btn btn-primary">Start Today</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 </header>
-<main>
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">UK Call Answering Service</span>
-      <h1>We answer <em>when you can't.</em></h1>
-      <p class="lead">Call Station answers your calls in your business name, books the appointment straight into your diary, and lets you know the moment it's done — so you never lose another customer to voicemail.</p>
-      <div class="hero-ctas">
-        <a href="#pricing" class="btn btn-primary">Get started today</a>
-        <a href="#how" class="btn btn-outline">See how it works</a>
-      </div>
-      <div class="hero-trust">
-        <div><strong>1,200+</strong><span>calls answered weekly</span></div>
-        <div><strong>98%</strong><span>answered within 3 rings</span></div>
-        <div><strong>4.9/5</strong><span>average client rating</span></div>
-      </div>
-    </div>
-    <div class="ripple-art" role="img" aria-label="Illustration of an incoming call being answered, with confirmations appearing around it">
-      <svg viewBox="0 0 400 400" fill="none">
-        <circle class="ripple-ring r1" cx="200" cy="200" r="90" stroke-width="2"/>
-        <circle class="ripple-ring r2" cx="200" cy="200" r="120" stroke-width="2"/>
-        <circle class="ripple-ring r3" cx="200" cy="200" r="150" stroke-width="2"/>
-        <circle cx="200" cy="200" r="66" fill="#FFF5F0" stroke="#E85D2C" stroke-width="2"/>
-        <path d="M182 182c-3 6-1 13 4 18l14 14c5 5 12 7 18 4l6-3c4-2 9-1 12 2l10 10c4 4 4 10 0 14l-5 5c-6 6-15 8-23 5-16-6-31-16-43-28s-22-27-28-43c-3-8-1-17 5-23l5-5c4-4 10-4 14 0l10 10c3 3 4 8 2 12l-3 6z" fill="#E85D2C"/>
-      </svg>
-      <div class="ripple-card rc1"><span class="badge"></span>Answered as your business</div>
-      <div class="ripple-card rc2"><span class="badge"></span>Booked — Tue 10:00am</div>
-      <div class="ripple-card rc3"><span class="badge"></span>You've been notified</div>
-    </div>
-  </div>
-</section>
-<div class="trusted">
-  <div class="wrap">
-    <p>Trusted by tradespeople and professionals across the UK</p>
-    <div class="trade-list"><span>Builders</span><span>Electricians</span><span>Plumbers</span><span>Accountants</span><span>Dentists</span><span>Solicitors</span></div>
-  </div>
-</div>
-<section id="cost">
-  <div class="wrap">
-    <div class="cost-band">
-      <div class="cost-visual">
-        <span class="eyebrow" style="color:var(--orange);">The real cost</span>
-        <div class="big-stat">27%</div>
-        <p>of calls to small UK businesses go unanswered during working hours — most of those customers simply call the next business on the list.</p>
-      </div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
       <div>
-        <span class="eyebrow">Why missed calls cost money</span>
-        <h2 style="margin-bottom:26px;">Every unanswered call is an enquiry walking to a competitor.</h2>
-        <ul class="cost-list">
-          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7l9 6 9-6M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1z"/></svg><div><h4>You're on the tools, not by the phone</h4><p>Up a ladder, under a sink, or mid-appointment — the call still needs answering.</p></div></li>
-          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5-1.4C8.4 21.5 10.2 22 12 22z"/></svg><div><h4>Voicemail loses the booking</h4><p>Most people don't leave a message. They hang up and ring someone else.</p></div></li>
-          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8v5M12 16h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><h4>It looks unprofessional</h4><p>A ringing phone with no answer says "too busy for you" — not what you want customers to think.</p></div></li>
-        </ul>
+        <span class="eyebrow">UK Business Call Answering</span>
+        <h1>Every Call Answered. Every Opportunity Captured.</h1>
+        <p class="hero-sub">Call Station answers your calls in your business name, books appointments straight into your calendar, takes a message when needed, and lets you know the moment it happens.</p>
+        <div class="hero-ctas">
+          <a href="#pricing" class="btn btn-primary">Start Today</a>
+          <a href="#pricing" class="btn btn-secondary">See Pricing</a>
+        </div>
+        <div class="hero-proof">
+          <span class="stars">★★★★★</span>
+          <span>Trusted by builders, dentists, accountants and tradespeople across the UK</span>
+        </div>
+      </div>
+
+      <div class="callflow" role="img" aria-label="Animation showing a call being answered, an appointment booked, and the business owner notified">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-time">Incoming call · Now</div>
+            <div class="ripple-wrap">
+              <span class="ripple r1"></span>
+              <span class="ripple r2"></span>
+              <span class="ripple r3"></span>
+              <span class="call-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg></span>
+            </div>
+            <div class="step-card"><span class="step-dot"></span>Call answered as "Aire Plumbing &amp; Heating"</div>
+            <div class="step-card"><span class="step-dot"></span>Appointment booked — Thu 2:30pm</div>
+            <div class="step-card"><span class="step-dot"></span>Confirmation SMS sent to customer</div>
+            <div class="step-card"><span class="step-dot"></span>You're notified by email — job won</div>
+          </div>
+        </div>
+        <p class="callflow-caption">What happens behind every call we answer</p>
       </div>
     </div>
-  </div>
-</section>
-<section class="section-alt" id="how">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">How it works</span>
-      <h2>Five steps. Nothing to install, nothing to learn.</h2>
-      <p>Your calls are answered, booked and confirmed — you just get the notification.</p>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust" style="padding:40px 0;">
+    <div class="wrap trust-inner">
+      <div class="trust-stars">
+        <span class="stars">★★★★★</span>
+        <span>Trusted by UK small businesses</span>
+      </div>
+      <div class="trust-chips">
+        <span class="chip">Builders</span>
+        <span class="chip">Plumbers</span>
+        <span class="chip">Electricians</span>
+        <span class="chip">Accountants</span>
+        <span class="chip">Dentists</span>
+        <span class="chip">Solicitors</span>
+        <span class="chip">Estate Agents</span>
+      </div>
     </div>
-    <div class="flow">
-      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div><h4>Call comes in</h4><p>To your existing number, answered in your business name.</p></div>
-      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h4>We answer</h4><p>A real person greets your customer professionally.</p></div>
-      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg></div><h4>Appointment booked</h4><p>Straight into your calendar, no double-booking.</p></div>
-      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h4>Customer confirmed</h4><p>They get an instant SMS confirming the booking.</p></div>
-      <div class="flow-step"><div class="circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a1.99 1.99 0 0 1-3.4 0"/></svg></div><h4>You're notified</h4><p>SMS and email the moment it happens.</p></div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="wrap problem-grid">
+      <div>
+        <span class="eyebrow">The Problem</span>
+        <h2>Every Missed Call Could Be A Lost Customer</h2>
+        <p style="color:var(--grey); font-size:16px; max-width:44ch;">Most people who can't get through won't call back — they'll call the next name on the list. If you're up a ladder, under a sink, or halfway through a client meeting, that's a job going to someone else.</p>
+        <p style="color:var(--grey); font-size:16px; max-width:44ch;">Call Station makes sure every caller reaches a real, professional voice — not a voicemail tone that sends them elsewhere.</p>
+      </div>
+      <div style="display:grid; gap:28px;">
+        <div class="stat-block">
+          <div class="num">62%</div>
+          <div class="lbl">of callers who reach voicemail hang up without leaving a message</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">85%</div>
+          <div class="lbl">of those who don't get through won't call your business back</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">100%</div>
+          <div class="lbl">of your calls answered in your business name, every time</div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-<section id="industries">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Industries we support</span>
-      <h2>Built around trades and practices that live on the phone.</h2>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="timeline" id="how">
+    <div class="wrap">
+      <div class="timeline-head">
+        <span class="eyebrow">How It Works</span>
+        <h2 style="font-size:clamp(28px,3.2vw,40px);">From Ringing Phone To Booked Appointment</h2>
+      </div>
+      <div class="timeline-list">
+        <div class="tl-item">
+          <span class="tl-marker"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg></span>
+          <h3>Your customer calls</h3>
+          <p>They dial your usual business number — nothing changes for them.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-marker"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/></svg></span>
+          <h3>Call Station answers using your business name</h3>
+          <p>A real professional greets them exactly the way you would, representing your business properly.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-marker"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>We help the customer</h3>
+          <p>We answer their questions, understand what they need, and keep the conversation moving.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-marker"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg></span>
+          <h3>Appointment booked or message taken</h3>
+          <p>We book straight into your calendar, or take a structured message with everything you need to follow up.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-marker"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+          <h3>You receive instant notification</h3>
+          <p>An email lands the moment the call ends, so you're never left wondering who called or why.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-marker"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></span>
+          <h3>You carry on running your business</h3>
+          <p>No interruption, no missed opportunity — just a business that always sounds fully staffed.</p>
+        </div>
+      </div>
     </div>
-    <div class="industry-strip">
-      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.5-3.5a5 5 0 0 1-6.7 6.7l-6.9 6.9a2 2 0 0 1-2.8-2.8l6.9-6.9a5 5 0 0 1 6.7-6.7l-3.5 3.5z"/></svg><h4>Builders</h4><p>Book site visits and quotes without leaving the job.</p></div>
-      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 11-14h-7z"/></svg><h4>Electricians</h4><p>Never miss an emergency call-out enquiry again.</p></div>
-      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 21a4 4 0 0 1-4-4V9a5 5 0 0 1 10 0v3m-6-9v4m6-4v4"/><circle cx="17" cy="17" r="4"/></svg><h4>Plumbers</h4><p>Urgent jobs answered fast, even at your busiest.</p></div>
-      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><h4>Accountants</h4><p>Client calls handled with a professional first impression.</p></div>
-      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a5 5 0 0 0-5 5c0 3 2 4 2 7v3a3 3 0 0 0 6 0v-3c0-3 2-4 2-7a5 5 0 0 0-5-5z"/><path d="M9 21h6"/></svg><h4>Dentists</h4><p>Patients booked in while you're with a patient.</p></div>
-      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 7v13h6v-6h6v6h6V7z"/></svg><h4>Solicitors</h4><p>Every enquiry captured, nothing left to chance.</p></div>
-      <div class="industry-card"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg><h4>Estate Agents</h4><p>Viewings booked the moment a buyer calls.</p></div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Why It Matters</span>
+      <h2 style="font-size:clamp(28px,3.2vw,40px); max-width:18ch; margin-bottom:44px;">Built Around The Way You Actually Work</h2>
+      <div class="benefits-grid">
+        <div class="benefit"><span class="benefit-num">01</span><h3>Never lose work to voicemail</h3><p>Every call gets a real answer, so no job quietly slips to a competitor.</p></div>
+        <div class="benefit"><span class="benefit-num">02</span><h3>Stay focused on your customers</h3><p>Give the person in front of you your full attention while we handle the phone.</p></div>
+        <div class="benefit"><span class="benefit-num">03</span><h3>Look like a larger business</h3><p>A calm, professional answer builds trust the moment someone calls.</p></div>
+        <div class="benefit"><span class="benefit-num">04</span><h3>No interruptions</h3><p>Keep both hands on the job. We only bring you what actually needs your attention.</p></div>
+        <div class="benefit"><span class="benefit-num">05</span><h3>A professional first impression</h3><p>First contact sets the tone — we make sure it's the right one, every time.</p></div>
+        <div class="benefit"><span class="benefit-num">06</span><h3>More appointments, less stress</h3><p>Bookings land in your calendar automatically, without you lifting a finger.</p></div>
+      </div>
     </div>
-  </div>
-</section>
-<section class="section-alt">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Benefits</span>
-      <h2>Everything you gain by never picking up again.</h2>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section id="industries" style="background:var(--offwhite);">
+    <div class="wrap">
+      <span class="eyebrow">Built For Your Trade</span>
+      <h2 style="font-size:clamp(28px,3.2vw,40px); max-width:18ch; margin-bottom:44px;">Every Business Is Answered On Its Own Terms</h2>
+      <div class="industries-grid">
+        <div class="ind-card">
+          <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6"/></svg></span>
+          <h3>Builders</h3>
+          <p>We answer while you're on-site, so enquiries never wait for you to get signal.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M6 3v6a6 6 0 0012 0V3M4 21h16"/></svg></span>
+          <h3>Plumbers</h3>
+          <p>Emergency callers get a calm, professional answer even when you're under a sink.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+          <h3>Electricians</h3>
+          <p>We answer while you're on jobs, and book callouts straight into your schedule.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg></span>
+          <h3>Accountants</h3>
+          <p>We handle calls during meetings, so client conversations never get interrupted.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <h3>Dentists</h3>
+          <p>We manage appointment enquiries, so the chair book stays full without front-desk strain.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></span>
+          <h3>Solicitors</h3>
+          <p>Every enquiry is handled with the discretion and professionalism your practice expects.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V11l7-7 7 7v10M10 21v-5h4v5"/></svg></span>
+          <h3>Estate Agents</h3>
+          <p>Viewings and valuations get booked in even while you're showing another property.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></span>
+          <h3>And more</h3>
+          <p>Salons, vets, consultants and tradespeople — if you take bookings by phone, we can help.</p>
+        </div>
+      </div>
     </div>
-    <div class="benefits">
-      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg><h4>Never miss another customer</h4><p>Every call answered, every time — even outside office hours.</p></div>
-      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg><h4>Stay focused on your work</h4><p>Keep your hands on the job while we handle the phone.</p></div>
-      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg><h4>Look more professional</h4><p>Every caller greeted properly, in your business name.</p></div>
-      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg><h4>Win more enquiries</h4><p>Answered calls convert. Missed calls don't.</p></div>
-      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><h4>Save hours every week</h4><p>No more chasing voicemails or playing phone tag.</p></div>
-      <div class="benefit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a1.99 1.99 0 0 1-3.4 0"/></svg><h4>Know instantly</h4><p>SMS and email the second a booking lands.</p></div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="pricing-head">
+        <span class="eyebrow">Pricing</span>
+        <h2 style="font-size:clamp(28px,3.2vw,40px);">Straightforward Plans, No Long Contracts</h2>
+        <p>Choose the plan that fits how many calls you take. Upgrade or downgrade whenever you need to.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price-desc">For businesses just getting started with call answering</p>
+          <div class="price-amt">£99</div>
+          <div class="price-per">per month · up to 30 calls</div>
+          <ul class="price-feats">
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Calls answered in your business name</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Messages taken and emailed instantly</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Email notification after every call</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>UK-based answering team</li>
+          </ul>
+          <p style="font-size:13px; color:rgba(255,255,255,0.55); margin-bottom:18px;">Ideal for sole traders taking their first steps away from voicemail.</p>
+          <a href="https://buy.stripe.com/fZueVfeBdeNz8Cdare93y00" class="btn btn-secondary btn-outline-white">Buy Now</a>
+          <p class="price-fine">No long contracts · Cancel anytime · Money-back guarantee</p>
+        </div>
+
+        <div class="price-card featured">
+          <span class="price-badge">Most Popular</span>
+          <h3>Growth</h3>
+          <p class="price-desc">For established businesses who can't afford to miss a call</p>
+          <div class="price-amt">£169</div>
+          <div class="price-per">per month · up to 80 calls</div>
+          <ul class="price-feats">
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Everything in Starter</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Appointments booked directly into your calendar</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Urgent calls transferred straight to you</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Custom greeting for your business</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Priority support</li>
+          </ul>
+          <p style="font-size:13px; color:rgba(255,255,255,0.85); margin-bottom:18px;">Ideal for busy trades and practices booking appointments every day.</p>
+          <a href="https://buy.stripe.com/4gM00lfFheNzbOp1UI93y01" class="btn btn-onprimary">Buy Now</a>
+          <p class="price-fine">No long contracts · Cancel anytime · Money-back guarantee</p>
+        </div>
+
+        <div class="price-card">
+          <h3>Professional</h3>
+          <p class="price-desc">For multi-line businesses with higher call volumes</p>
+          <div class="price-amt">£249</div>
+          <div class="price-per">per month · up to 180 calls</div>
+          <ul class="price-feats">
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Everything in Growth</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Multiple team members supported</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Call routing rules by department</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Monthly call activity report</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Dedicated account manager</li>
+          </ul>
+          <p style="font-size:13px; color:rgba(255,255,255,0.55); margin-bottom:18px;">Ideal for practices and firms with several people taking calls.</p>
+          <a href="https://buy.stripe.com/fZu4gBdx99tff0B9na93y02" class="btn btn-secondary btn-outline-white">Buy Now</a>
+          <p class="price-fine">No long contracts · Cancel anytime · Money-back guarantee</p>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
-<section id="testimonials">
-  <div class="wrap">
-    <div class="section-head">
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="wrap">
       <span class="eyebrow">Testimonials</span>
-      <h2>What business owners say after switching.</h2>
-    </div>
-    <div class="testi-wrap">
-      <div class="testi"><svg class="quote-mark" width="34" height="26" viewBox="0 0 34 26" fill="currentColor" aria-hidden="true"><path d="M0 26V15.6C0 6.9 5.4 1.3 14 0l1.7 4.3C10 5.7 7.3 9 7.3 13.3H14V26H0zm19 0V15.6c0-8.7 5.4-14.3 14-15.6l1.7 4.3c-5.7 1.4-8.4 4.7-8.4 9v.3H33V26H19z"/></svg><p>Since we started with Call Station we've stopped losing quotes to competitors. Every call gets answered now, even when we're on a roof.</p><div class="testi-person"><div class="avatar">M</div><div><strong>Martin H.</strong><span>Roofing contractor, Leeds</span></div></div></div>
-      <div class="testi"><svg class="quote-mark" width="34" height="26" viewBox="0 0 34 26" fill="currentColor" aria-hidden="true"><path d="M0 26V15.6C0 6.9 5.4 1.3 14 0l1.7 4.3C10 5.7 7.3 9 7.3 13.3H14V26H0zm19 0V15.6c0-8.7 5.4-14.3 14-15.6l1.7 4.3c-5.7 1.4-8.4 4.7-8.4 9v.3H33V26H19z"/></svg><p>Patients used to get voicemail if we were mid-appointment. Now every call is booked straight into the diary without us lifting a finger.</p><div class="testi-person"><div class="avatar">S</div><div><strong>Sarah P.</strong><span>Dental practice owner, Birmingham</span></div></div></div>
-      <div class="testi"><svg class="quote-mark" width="34" height="26" viewBox="0 0 34 26" fill="currentColor" aria-hidden="true"><path d="M0 26V15.6C0 6.9 5.4 1.3 14 0l1.7 4.3C10 5.7 7.3 9 7.3 13.3H14V26H0zm19 0V15.6c0-8.7 5.4-14.3 14-15.6l1.7 4.3c-5.7 1.4-8.4 4.7-8.4 9v.3H33V26H19z"/></svg><p>It's given us back our evenings. Calls that used to go to voicemail after 5pm are now booked appointments waiting for us the next morning.</p><div class="testi-person"><div class="avatar">D</div><div><strong>David R.</strong><span>Electrical contractor, Sheffield</span></div></div></div>
-    </div>
-  </div>
-</section>
-<section class="section-alt" id="pricing">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Pricing</span>
-      <h2>Simple plans. Cancel any time.</h2>
-      <p>Every plan includes UK-based call answering, appointment booking and instant notifications.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="plan">
-        <span class="plan-tag">Starter</span>
-        <h3>Starter</h3>
-        <div class="price">£99<span>/month</span></div>
-        <p class="plan-desc">For sole traders getting started.</p>
-        <ul><li>Up to 50 calls answered</li><li>Calls answered in your business name</li><li>Appointment booking</li><li>Instant SMS &amp; email alerts</li></ul>
-        <button class="btn btn-outline" data-plan="starter">Buy now</button>
-      </div>
-      <div class="plan highlight">
-        <span class="plan-tag">Most popular</span>
-        <h3>Growth</h3>
-        <div class="price">£149<span>/month</span></div>
-        <p class="plan-desc">For growing businesses that can't afford a missed call.</p>
-        <ul><li>Up to 200 calls answered</li><li>Priority answering, under 3 rings</li><li>Appointment booking &amp; rescheduling</li><li>Instant SMS &amp; email alerts</li><li>Monthly call summary report</li></ul>
-        <button class="btn btn-primary" data-plan="growth">Buy now</button>
-      </div>
-      <div class="plan">
-        <span class="plan-tag">Professional</span>
-        <h3>Professional</h3>
-        <div class="price">£249<span>/month</span></div>
-        <p class="plan-desc">For established practices with high call volume.</p>
-        <ul><li>Unlimited calls answered</li><li>Dedicated call handling team</li><li>Appointment booking across multiple diaries</li><li>Instant SMS &amp; email alerts</li><li>Priority support line</li></ul>
-        <button class="btn btn-outline" data-plan="professional">Buy now</button>
+      <h2 style="font-size:clamp(28px,3.2vw,40px); max-width:18ch; margin-bottom:44px;">Businesses Who Stopped Missing Calls</h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"I used to lose at least two jobs a week to voicemail. Now every call gets answered, even when I'm up a ladder. It's paid for itself within the first fortnight."</p>
+          <div class="testi-who">
+            <div class="testi-avatar">M</div>
+            <div><div class="name">Martin Francis</div><div class="role">Builder, Leeds</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Our reception used to be swamped during clinic hours. Call Station now books appointments straight into our diary and patients don't even notice the difference."</p>
+          <div class="testi-who">
+            <div class="testi-avatar">S</div>
+            <div><div class="name">Sarah Whitfield</div><div class="role">Dentist, Sheffield</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"During client meetings my phone used to ring straight to voicemail. Now every caller gets a proper answer, and I get a clear message the moment I'm free."</p>
+          <div class="testi-who">
+            <div class="testi-avatar">D</div>
+            <div><div class="name">David Okafor</div><div class="role">Accountant, Birmingham</div></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section id="faq">
-  <div class="wrap">
-    <div class="section-head" style="margin-left:auto;margin-right:auto;text-align:center;">
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
       <span class="eyebrow">FAQ</span>
-      <h2>Questions business owners ask us most.</h2>
+      <h2 style="font-size:clamp(28px,3.2vw,40px); margin-bottom:40px;">Common Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item open">
+          <button class="faq-q" aria-expanded="true">How quickly can I start?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Most businesses are up and running within 24 hours of signing up. We'll take a short call to learn how you'd like your business represented.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you answer using my company name?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Every call is answered exactly the way you tell us to — using your business name and the greeting style you choose.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you access my calendar?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes, on the Growth and Professional plans we connect securely to your calendar so appointments are booked directly, with no double-booking.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I keep my existing number?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. We simply forward your existing number to us when you're unavailable, or you can use a dedicated number — whichever suits you.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you transfer urgent calls?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. You tell us what counts as urgent for your business, and those calls are transferred straight to you in real time.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What happens outside business hours?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">You choose your hours of cover, including evenings and weekends. Calls outside those hours can go to a message service or straight to voicemail — your choice.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I cancel anytime?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes, there are no long contracts. You can cancel or change your plan at any time from your account.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How are appointments booked?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Once connected to your calendar, we book appointments directly into available slots and send a confirmation to your customer automatically.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do customers know they're speaking to a receptionist service?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Our team answers as part of your business, in your name. We're happy to follow whatever approach you're most comfortable with.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is my customer data secure?<span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. All customer data is handled in line with UK GDPR, stored securely, and never shared or sold to third parties.</div></div>
+        </div>
+
+      </div>
     </div>
-    <div class="faq">
-      <div class="faq-item"><button class="faq-q">Will callers know I'm not answering myself?<span class="plus">+</span></button><div class="faq-a"><p>No. Every call is answered in your business name, so it sounds exactly like your own team picking up the phone.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Do I need to install anything?<span class="plus">+</span></button><div class="faq-a"><p>No apps, no new hardware. We simply divert your existing number, and you get notified by SMS and email as normal.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Can I keep my existing phone number?<span class="plus">+</span></button><div class="faq-a"><p>Yes. Your current number stays exactly the same — customers won't notice any difference on their end.</p></div></div>
-      <div class="faq-item"><button class="faq-q">What happens if I go over my call limit?<span class="plus">+</span></button><div class="faq-a"><p>We'll always let you know in advance. You can move up a plan at any time, and there's no long-term contract.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Can I cancel at any time?<span class="plus">+</span></button><div class="faq-a"><p>Yes. There's no lock-in contract — you can cancel or change plans whenever you need to.</p></div></div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="wrap">
+      <h2>Stop Losing Customers To Voicemail</h2>
+      <p>Join the UK small businesses who never miss a call, an enquiry, or a booking again.</p>
+      <div class="final-ctas">
+        <a href="#pricing" class="btn btn-onprimary">Start Today</a>
+        <a href="#pricing" class="btn btn-outline-white">Choose Your Plan</a>
+      </div>
     </div>
-  </div>
-</section>
-<section>
-  <div class="final-cta">
-    <h2>Stop losing customers to a ringing phone.</h2>
-    <p>Join the UK tradespeople and practices who never miss a call — or a booking — again.</p>
-    <div class="hero-ctas"><a href="#pricing" class="btn btn-white">Get started today</a></div>
-  </div>
-</section>
+  </section>
+
 </main>
+
 <footer>
   <div class="wrap">
     <div class="footer-grid">
-      <div><div class="logo" style="margin-bottom:14px;"><span class="dot" aria-hidden="true"></span>Call Station</div><p style="max-width:260px;color:var(--ink-soft);font-size:0.9rem;">UK-based call answering for businesses who can't afford to miss a customer.</p></div>
-      <div><h5>Company</h5><ul><li><a href="#how">How it works</a></li><li><a href="#industries">Industries</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
-      <div><h5>Support</h5><ul><li><a href="#faq">FAQ</a></li><li><a href="#">Contact us</a></li><li><a href="#">Help centre</a></li></ul></div>
-      <div><h5>Legal</h5><ul><li><a href="#">Privacy policy</a></li><li><a href="#">Terms of service</a></li><li><a href="#" id="manage-cookies-link">Cookie settings</a></li></ul></div>
+      <div>
+        <div class="footer-logo">Call Station</div>
+        <p style="max-width:32ch; color:rgba(255,255,255,0.55); font-size:13.5px;">UK business call answering. We answer when you can't, so you never miss another customer.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:08001234567">0800 123 4567</a></li>
+          <li><a href="mailto:hello@callstation.co.uk">hello@callstation.co.uk</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom"><span>© 2026 Call Station. All rights reserved.</span><span>Registered in England &amp; Wales</span></div>
+    <div class="footer-bottom">
+      <span>© 2026 Call Station Ltd. All rights reserved.</span>
+      <span>Secure Stripe Payments</span>
+    </div>
   </div>
 </footer>
-<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie preferences">
-  <h4>We use cookies</h4>
-  <p>We use cookies to run this site and understand how it's used. You can accept all, reject non-essential cookies, or manage your preferences.</p>
+
+<!-- Cookie consent -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <p>We use cookies to run this site and to understand how it's used. You can accept all cookies, reject non-essential ones, or manage your preferences.</p>
   <div class="cookie-actions">
-    <button class="accept" id="cookie-accept">Accept all</button>
-    <button id="cookie-reject">Reject non-essential</button>
-    <button id="cookie-manage">Manage preferences</button>
+    <button class="btn btn-primary" id="acceptAll">Accept All</button>
+    <button class="btn btn-secondary" id="rejectAll">Reject Non-Essential</button>
+    <button class="btn btn-secondary" id="managePrefs">Manage Preferences</button>
   </div>
 </div>
+
+<div class="cookie-modal" id="cookieModal">
+  <div class="cookie-modal-box">
+    <h3>Cookie Preferences</h3>
+    <div class="cookie-pref-row">
+      <div><strong>Essential</strong><p>Required for the site to function. Always on.</p></div>
+      <label class="switch"><input type="checkbox" checked disabled><span class="slider"></span></label>
+    </div>
+    <div class="cookie-pref-row">
+      <div><strong>Analytics</strong><p>Helps us understand how visitors use the site.</p></div>
+      <label class="switch"><input type="checkbox" id="prefAnalytics"><span class="slider"></span></label>
+    </div>
+    <div class="cookie-pref-row">
+      <div><strong>Marketing</strong><p>Used to measure the effectiveness of our advertising.</p></div>
+      <label class="switch"><input type="checkbox" id="prefMarketing"><span class="slider"></span></label>
+    </div>
+    <div style="display:flex; gap:10px; margin-top:22px;">
+      <button class="btn btn-primary" id="savePrefs" style="flex:1;">Save Preferences</button>
+      <button class="btn btn-secondary" id="closeModal" style="flex:1;">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <script>
-  document.querySelectorAll('.faq-q').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const item = btn.parentElement;
-      const wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-      if(!wasOpen) item.classList.add('open');
+  // Mobile nav
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const btn = item.querySelector('.faq-q');
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
     });
   });
-  const banner = document.getElementById('cookie-banner');
-  let cookieChoice = null;
-  function showBanner(){ banner.style.display='block'; }
-  function hideBanner(){ banner.style.display='none'; }
-  try{ cookieChoice = window.localStorage.getItem('ch_cookie_choice'); }catch(e){ cookieChoice = null; }
-  if(!cookieChoice){ setTimeout(showBanner, 600); }
-  function setChoice(val){
-    cookieChoice = val;
-    try{ window.localStorage.setItem('ch_cookie_choice', val); }catch(e){}
-    hideBanner();
-  }
-  document.getElementById('cookie-accept').addEventListener('click', ()=>setChoice('all'));
-  document.getElementById('cookie-reject').addEventListener('click', ()=>setChoice('essential'));
-  document.getElementById('cookie-manage').addEventListener('click', ()=>setChoice('managed'));
-  document.getElementById('manage-cookies-link').addEventListener('click', (e)=>{ e.preventDefault(); showBanner(); });
 
-  const stripeLinks = {
-    starter: 'https://buy.stripe.com/fZueVfeBdeNz8Cdare93y00',
-    growth: 'https://buy.stripe.com/4gM00lfFheNzbOp1UI93y01',
-    professional: 'https://buy.stripe.com/fZu4gBdx99tff0B9na93y02'
-  };
-  document.querySelectorAll('[data-plan]').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const url = stripeLinks[btn.dataset.plan];
-      if(url) window.location.href = url;
+  // Cookie consent
+  const cookieBanner = document.getElementById('cookieBanner');
+  const cookieModal = document.getElementById('cookieModal');
+  const CONSENT_KEY = 'callstation_cookie_consent';
+
+  function getConsent(){
+    try { return JSON.parse(localStorage.getItem(CONSENT_KEY)); } catch(e){ return null; }
+  }
+  function setConsent(consent){
+    try { localStorage.setItem(CONSENT_KEY, JSON.stringify(consent)); } catch(e){}
+  }
+  function hideBanner(){ cookieBanner.classList.remove('show'); }
+  function showBanner(){ cookieBanner.classList.add('show'); }
+
+  const existing = getConsent();
+  if (!existing) {
+    setTimeout(showBanner, 600);
+  }
+
+  document.getElementById('acceptAll').addEventListener('click', () => {
+    setConsent({ essential:true, analytics:true, marketing:true });
+    hideBanner();
+  });
+  document.getElementById('rejectAll').addEventListener('click', () => {
+    setConsent({ essential:true, analytics:false, marketing:false });
+    hideBanner();
+  });
+  document.getElementById('managePrefs').addEventListener('click', () => {
+    cookieModal.classList.add('show');
+  });
+  document.getElementById('closeModal').addEventListener('click', () => {
+    cookieModal.classList.remove('show');
+  });
+  document.getElementById('savePrefs').addEventListener('click', () => {
+    setConsent({
+      essential:true,
+      analytics: document.getElementById('prefAnalytics').checked,
+      marketing: document.getElementById('prefMarketing').checked
     });
+    cookieModal.classList.remove('show');
+    hideBanner();
   });
 </script>
+
 </body>
 </html>
